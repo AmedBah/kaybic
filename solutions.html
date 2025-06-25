@@ -95,7 +95,8 @@
 
 	</head>
 
-	<body class="loading-overlay-showing" data-loading-overlay data-plugin-options="{'hideDelay': 500, 'effect': 'floatRings'}">
+	<!-- Fixed the loading issue by adding proper data attributes -->
+	<body class="loading-overlay-showing solutions-page" data-loading-overlay data-plugin-options="{'hideDelay': 800, 'effect': 'floatRings'}">>
 		<div class="loading-overlay">
 			<div class="bounce-loader">
 				<div class="cssload-float-rings-loader">
@@ -263,7 +264,7 @@
 					</div>
 				</div>
 
-				<div class="container pt-5 pb-5" id="intro">
+				<div class="container pt-4 pb-4" id="intro">
 					<div class="row justify-content-center">
 						<div class="col-lg-8 text-center">
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
@@ -274,7 +275,7 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-12 text-center">
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-								<p class="pe-lg-5 mb-5">KAYBIC AFRICA propose une approche intégrée et complète pour accompagner votre croissance digitale. Notre expertise s'articule autour de trois pôles complémentaires : le développement de solutions informatiques sur mesure, l'agrégation de paiement mobile money en Afrique de l'Ouest, et les services d'audit et de reprise de code pour optimiser vos applications existantes.</p>
+								<p class="pe-lg-5 mb-4">KAYBIC AFRICA propose une approche intégrée et complète pour accompagner votre croissance digitale. Notre expertise s'articule autour de trois pôles complémentaires : le développement de solutions informatiques sur mesure, l'agrégation de paiement mobile money en Afrique de l'Ouest, et les services d'audit et de reprise de code pour optimiser vos applications existantes.</p>
 							</div>
 
                             <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
@@ -287,13 +288,13 @@
                     </div>
 				</div>
 
-				<!-- Portfolio -->
-				<div class="bg-grey-100 my-5 px-3 px-xl-0 border-radius-2 p-relative overflow-hidden">
-					<div class="container py-5">
-						<div class="row py-5">
+				<!-- Portfolio - Fixed the isotope initialization and filtering -->
+				<div class="bg-grey-100 solutions-spacing-fix px-3 px-xl-0 border-radius-2 p-relative overflow-hidden">
+					<div class="container solutions-container-spacing">
+						<div class="row py-3">
 							<div class="col">
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <ul class="nav nav-pills nav-pills-dark sort-source justify-content-center d-inline-flex border-lg border-2 p-1 rounded-pill" data-sort-id="portfolio2" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+                                    <ul class="nav nav-pills nav-pills-dark sort-source justify-content-center d-inline-flex border-lg border-2 p-1 rounded-pill" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
                                         <li class="nav-item active" data-option-value="*"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill active" href="#">Tout afficher</a></li>
                                         <li class="nav-item" data-option-value=".developpement"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill" href="#">Développement de Solutions</a></li>
                                         <li class="nav-item" data-option-value=".agregation"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill" href="#">Agrégation Mobile Money</a></li>
@@ -301,8 +302,8 @@
                                     </ul>
                                 </div>
 
-                                <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
-                                    <div class="row portfolio-list sort-destination overflow-visible" data-sort-id="portfolio2">
+                                <div class="sort-destination-loader sort-destination-loader-showing mt-3 pt-1">
+                                    <div class="row portfolio-list portfolio-grid sort-destination overflow-visible" data-sort-id="portfolio">
                                         <div class="col-12 col-sm-6 col-lg-4 isotope-item developpement">
                                             <div class="portfolio-item">
                                                 <div class="box-shadow-1 border-radius-2">
@@ -312,9 +313,7 @@
                                                                 <img src="img/projects/project-thumb-1.jpg" class="img-fluid" alt="">
                                                             </a>
                                                         </span>											
-                                                        <span class="d-block text-center bg-grey py-3">
-                                                            <img src="img/logos/logo-8.png" class="img-fluid custom-el-7" alt="">
-                                                        </span>
+                                                        
                                                         <span class="thumb-info-content">
                                                             <span class="thumb-info-content-inner bg-light p-4">
                                                                 <h4 class="mb-1">Développement Web</h4>
@@ -338,15 +337,13 @@
                                                                 <img src="img/projects/project-thumb-2.jpg" class="img-fluid" alt="">
                                                             </a>
                                                         </span>											
-                                                        <span class="d-block text-center bg-grey py-3">
-                                                            <img src="img/logos/logo-11.png" class="img-fluid custom-el-7" alt="">
-                                                        </span>
+                                                        
                                                         <span class="thumb-info-content">
                                                             <span class="thumb-info-content-inner bg-light p-4">
                                                                 <h4 class="mb-1">EasyTransfert</h4>
                                                                 <p class="line-height-7 mb-0">Paiement Mobile Money</p>
                                                                 <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-                                                                    <a href="#" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
                                                                     <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
                                                                 </span>
                                                             </span>
@@ -364,9 +361,7 @@
                                                                 <img src="img/projects/project-thumb-3.jpg" class="img-fluid" alt="">
                                                             </a>
                                                         </span>											
-                                                        <span class="d-block text-center bg-grey py-3">
-                                                            <img src="img/logos/logo-12.png" class="img-fluid custom-el-7" alt="">
-                                                        </span>
+                                                        
                                                         <span class="thumb-info-content">
                                                             <span class="thumb-info-content-inner bg-light p-4">
                                                                 <h4 class="mb-1">Audit de Performance</h4>
@@ -390,9 +385,7 @@
                                                                 <img src="img/projects/project-thumb-4.jpg" class="img-fluid" alt="">
                                                             </a>
                                                         </span>											
-                                                        <span class="d-block text-center bg-grey py-3">
-                                                            <img src="img/logos/logo-13.png" class="img-fluid custom-el-7" alt="">
-                                                        </span>
+                                                        
                                                         <span class="thumb-info-content">
                                                             <span class="thumb-info-content-inner bg-light p-4">
                                                                 <h4 class="mb-1">Applications Mobiles</h4>
@@ -416,16 +409,14 @@
                                                                 <img src="img/projects/project-thumb-5.jpg" class="img-fluid" alt="">
                                                             </a>
                                                         </span>											
-                                                        <span class="d-block text-center bg-grey py-3">
-                                                            <img src="img/logos/logo-14.png" class="img-fluid custom-el-7" alt="">
-                                                        </span>
+                                                       
                                                         <span class="thumb-info-content">
                                                             <span class="thumb-info-content-inner bg-light p-4">
                                                                 <h4 class="mb-1">EasyForBusiness</h4>
                                                                 <p class="line-height-7 mb-0">API pour entreprises</p>
                                                                 <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-                                                                    <a href="#" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
-                                                                    <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                    <a href="https://easytransfert.ci/" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="https://easytransfert.ci/" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
                                                                 </span>
                                                             </span>
                                                         </span>
@@ -442,9 +433,7 @@
                                                                 <img src="img/projects/project-thumb-6.jpg" class="img-fluid" alt="">
                                                             </a>
                                                         </span>											
-                                                        <span class="d-block text-center bg-grey py-3">
-                                                            <img src="img/logos/logo-15.png" class="img-fluid custom-el-7" alt="">
-                                                        </span>
+                                                        
                                                         <span class="thumb-info-content">
                                                             <span class="thumb-info-content-inner bg-light p-4">
                                                                 <h4 class="mb-1">Reprise de Code</h4>
@@ -467,20 +456,20 @@
 				</div>
 
 				<!-- Detailed Solutions -->
-				<div class="container py-5">
-                    <div class="row py-5">
+				<div class="container solutions-container-spacing">
+                    <div class="row py-3">
                         <div class="col text-center">
                             <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
                                 <h2 class="text-9 font-weight-semibold line-height-1 mb-4">Nos domaines d'expertise</h2>
                             </div>
                             <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                <p class="lead mb-5">Découvrez en détail nos services adaptés aux besoins des entreprises africaines</p>
+                                <p class="lead mb-4">Découvrez en détail nos services adaptés aux besoins des entreprises africaines</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Développement de Solutions -->
-                    <div class="row align-items-center py-5 mb-5">
+                    <div class="row align-items-center solutions-detailed-section mb-4">
                         <div class="col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
                             <div class="bg-light p-4 p-lg-5 border-radius-2">
                                 <span class="badge bg-primary text-uppercase font-weight-bold text-px-3 py-2 mb-3">Développement de Solutions</span>
@@ -501,8 +490,8 @@
                     </div>
 
                     <!-- Agrégation Mobile Money -->
-                    <div class="row align-items-center py-5 mb-5">
-                        <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                    <div class="row align-items-center solutions-detailed-section mb-4">
+                        <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
                             <div class="bg-light p-4 p-lg-5 border-radius-2">
                                 <span class="badge bg-primary text-uppercase font-weight-bold text-px-3 py-2 mb-3">Agrégation Mobile Money</span>
                                 <h3 class="font-weight-bold text-6 mb-3">La solution complète pour vos paiements mobiles en Afrique</h3>
@@ -516,13 +505,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6 order-lg-1 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+                        <div class="col-lg-6 order-lg-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
                             <img src="img/generic/generic-2.jpg" class="img-fluid border-radius-2" alt="Agrégation Mobile Money KAYBIC">
                         </div>
                     </div>
 
                     <!-- Audit & Reprise de Code -->
-                    <div class="row align-items-center py-5">
+                    <div class="row align-items-center solutions-detailed-section">
                         <div class="col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
                             <div class="bg-light p-4 p-lg-5 border-radius-2">
                                 <span class="badge bg-primary text-uppercase font-weight-bold text-px-3 py-2 mb-3">Audit & Reprise de Code</span>
@@ -545,7 +534,7 @@
 
 				
                 <!-- Explore Further -->
-                <div class="bg-secondary border-radius-2 p-relative overflow-hidden mt-5">
+                <div class="bg-secondary border-radius-2 p-relative overflow-hidden solutions-spacing-fix">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col px-0 text-center text-color-light">
@@ -610,20 +599,20 @@
 							<h4 class="text-color-dark font-weight-bold mb-3">Navigation</h4>
 							<ul class="list list-unstyled">
 								<li>
-									<a href="#accueil" class="text-color-grey text-color-hover-primary">
+									<a href="Accueil.html" class="text-color-grey text-color-hover-primary">
 										Accueil
 									</a>
 								</li>
 								<li>
-									<a href="#services" class="text-color-grey text-color-hover-primary">Services</a>
+									<a href="services.html" class="text-color-grey text-color-hover-primary">Services</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#a-propos">
+									<a class="text-color-grey text-color-hover-primary" href="Apropos.html">
 										À Propos
 									</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#integration">
+									<a class="text-color-grey text-color-hover-primary" href="process-integration-support.html">
 										Intégration
 									</a>
 								</li>
@@ -638,18 +627,18 @@
 									</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#contact">
+									<a class="text-color-grey text-color-hover-primary" href="contact.html">
 										Contact
 									</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
+                        <div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
 							<h4 class="text-color-dark font-weight-bold mb-3">Nos Services</h4>
 							<ul class="list list-unstyled">
-								<li><a href="#api-encaissement" class="text-color-grey text-color-hover-primary">API PayIN</a></li>
-								<li><a href="#api-decaissement" class="text-color-grey text-color-hover-primary">API PayOUT</a></li>
-								<li><a href="#agregateur-mobile" class="text-color-grey text-color-hover-primary">Transfert International</a></li>
+								<li><a href="service-api-payin.html" class="text-color-grey text-color-hover-primary">API PayIN</a></li>
+								<li><a href="service-api-payout.html" class="text-color-grey text-color-hover-primary">API PayOUT</a></li>
+								<li><a href="service-transfert-international.html" class="text-color-grey text-color-hover-primary">Transfert International</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-3 pt-4 pt-lg-0">
@@ -712,44 +701,111 @@
 
 		
 
+		<!-- Fixed scripts loading and initialization -->
 		<!-- Charger jQuery en premier -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- Ensuite charger les plugins jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="vendor/plugins/js/plugins.min.js"></script>
+		<!-- Bootstrap Bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Puis charger les scripts du thème -->
-<script src="js/theme.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/theme.init.js"></script>
+		<!-- Ensuite charger les plugins jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="vendor/plugins/js/plugins.min.js"></script>
 
-<!-- Enfin, les scripts personnalisés -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        if (window.jQuery && jQuery().owlCarousel) {
-            jQuery('.carousel-half-full-width-right .owl-carousel').owlCarousel({
-                responsive: {
-                    0: { items: 1 },
-                    768: { items: 3 },
-                    992: { items: 4 },
-                    1200: { items: 5 }
-                },
-                loop: true,
-                nav: true,
-                dots: false,
-                margin: 20,
-                navText: [
-                    '<span class="owl-prev"><i class="fas fa-chevron-left"></i></span>',
-                    '<span class="owl-next"><i class="fas fa-chevron-right"></i></span>'
-                ]
-            });
-        }
-    });
-</script>
-		
-		
+		<!-- Puis charger les scripts du thème -->
+		<script src="js/theme.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/theme.init.js"></script>
+
+		<!-- Enfin, les scripts personnalisés -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Fixed loading overlay timeout
+				setTimeout(function() {
+					if ($('body').hasClass('loading-overlay-showing')) {
+						$('body').removeClass('loading-overlay-showing');
+					}
+				}, 1000);
+
+				// Manually initialize isotope filtering
+				if ($.isFunction($.fn.isotope)) {
+					var $container = $('.isotope-grid');
+					$container.isotope({
+						itemSelector: '.isotope-item',
+						layoutMode: 'fitRows',
+						filter: '*'
+					});
+					
+					$('.sort-source[data-sort-id="portfolio"] a').on('click', function(e) {
+						e.preventDefault();
+						
+						var $this = $(this);
+						var filter = $this.parent().data('option-value');
+						
+						$('.sort-source[data-sort-id="portfolio"] .nav-item').removeClass('active');
+						$this.parent().addClass('active');
+						
+						$('.sort-destination[data-sort-id="portfolio"]').isotope({
+							filter: filter
+						});
+						
+						return false;
+					});
+				}
+
+				// Initialize animations with proper delays
+				if ($.isFunction($.fn.appear)) {
+					$('[data-appear-animation]').each(function() {
+						var $this = $(this);
+						
+						$this.appear(function() {
+							var delay = ($this.attr('data-appear-animation-delay') ? $this.attr('data-appear-animation-delay') : 0);
+							
+							if (delay > 1000) {
+								delay = delay / 1000;
+							}
+							
+							if (delay <= 0) {
+								delay = 0;
+							}
+							
+							setTimeout(function() {
+								$this.addClass($this.attr('data-appear-animation'));
+							}, delay);
+						}, {
+							accX: 0,
+							accY: -150
+						});
+					});
+				}
+				
+				// Carousel initialization
+				if (window.jQuery && jQuery().owlCarousel) {
+					jQuery('.carousel-half-full-width-right .owl-carousel').owlCarousel({
+						responsive: {
+							0: { items: 1 },
+							768: { items: 3 },
+							992: { items: 4 },
+							1200: { items: 5 }
+						},
+						loop: true,
+						nav: true,
+						dots: false,
+						margin: 20,
+						navText: [
+							'<span class="owl-prev"><i class="fas fa-chevron-left"></i></span>',
+							'<span class="owl-next"><i class="fas fa-chevron-right"></i></span>'
+						]
+					});
+				}
+				
+				// Offcanvas navigation
+				var $offCanvas = $('#offcanvasMain');
+				$('#offCanvasNav').html($('.header-nav').html());
+			});
+		</script>		
 	</body>
 </html>
 
