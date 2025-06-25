@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection vers Accueil - Kaybic</title>
+    
+    <!-- Redirection automatique vers Accueil.html -->
+    <meta http-equiv="refresh" content="0; url=Accueil.html">
+    
+    <!-- Redirection JavaScript (fallback) -->
+    <script>
+        window.location.replace("Accueil.html");
+    </script>
+    
+    <!-- Style minimal pour la page de redirection -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f8f9fa;
+        }
+        .loading {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <p>Redirection en cours...</p>
+        <p>Si vous n'êtes pas redirigé automatiquement, <a href="Accueil.html">cliquez ici</a>.</p>
+    </div>
+</body>
+</html>

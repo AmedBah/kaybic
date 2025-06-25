@@ -95,29 +95,38 @@ p {
 }
 
 .custom-mask-img-1 {
-    -webkit-mask-image: url(../../img/generic/mask-image-1.png);
-    mask-image: url(../../img/generic/mask-image-1.png);
+    -webkit-mask-image: url(../img/generic/mask-image-1.png);
+    mask-image: url(../img/generic/mask-image-1.png);
     -webkit-mask-repeat: no-repeat;
             mask-repeat: no-repeat;
     -webkit-mask-size: 100%;
             mask-size: 100%;
     -webkit-mask-position: center;
             mask-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.custom-mask-img-1 img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .custom-mask-img-2 {
-    -webkit-mask-image: url(../../img/generic/mask-image-2.png);
-    mask-image: url(../../img/generic/mask-image-2.png);
+    -webkit-mask-image: url(../img/generic/mask-image-2.png);
+    mask-image: url(../img/generic/mask-image-2.png);
 }
 
 .custom-mask-img-3 {
-    -webkit-mask-image: url(../../img/generic/mask-image-3.png);
-    mask-image: url(../../img/generic/mask-image-3.png);
+    -webkit-mask-image: url(../img/generic/mask-image-3.png);
+    mask-image: url(../img/generic/mask-image-3.png);
 }
 
 .custom-mask-img-4 {
-    -webkit-mask-image: url(../../img/generic/mask-image-4.png);
-    mask-image: url(../../img/generic/mask-image-4.png);
+    -webkit-mask-image: url(../img/generic/mask-image-4.png);
+    mask-image: url(../img/generic/mask-image-4.png);
 }
 
 /* Cascading Wrapper */
