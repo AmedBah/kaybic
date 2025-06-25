@@ -1,0 +1,121 @@
+/* Optimisation de l'affichage des logos partenaires dans le carrousel */
+.partner-logo {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: grayscale(0.3);
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+/* S'assurer que les conteneurs des logos ont une hauteur uniforme */
+.carousel-center-active-item .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    padding: 15px;
+}
+
+/* Responsive pour les logos */
+@media (max-width: 767px) {
+    .partner-logo {
+        max-width: 100px;
+    }
+    
+    .carousel-center-active-item .text-center {
+        min-height: 80px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .partner-logo {
+        max-width: 140px;
+    }
+    
+    .carousel-center-active-item .text-center {
+        min-height: 120px;
+        padding: 20px;
+    }
+}
+
+/* Styles pour l'histogramme de volume de transactions */
+.transaction-volume-chart {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.transaction-chart {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.chart-bar {
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.chart-bar:hover {
+    opacity: 1;
+    filter: brightness(1.1);
+}
+
+.chart-label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.chart-value {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.chart-unit {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.chart-legend {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.legend-color {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Animation pour les barres */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chart-container .chart-bar {
+    animation-fill-mode: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .transaction-volume-chart {
+        padding: 15px;
+    }
+    
+    .chart-container svg {
+        height: 250px;
+    }
+    
+    .chart-legend {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
