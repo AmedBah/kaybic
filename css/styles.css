@@ -385,3 +385,47 @@ img[src*="img/services/"] {
     overflow: hidden;
     border-radius: 8px 8px 0 0;
 }
+
+/* Images du processus - dimensions uniformes */
+img[src*="img/process/"] {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/* Conteneur spécifique pour les images du processus */
+.process-step img[src*="img/process/"],
+.feature-box img[src*="img/process/"],
+.process-image img[src*="img/process/"] {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Effet hover sur les images du processus */
+.process-step:hover img[src*="img/process/"],
+.feature-box:hover img[src*="img/process/"],
+.process-image:hover img[src*="img/process/"] {
+    transform: scale(1.02);
+}
+
+/* Classes pour les conteneurs d'images de processus */
+.custom-process-img-wrapper {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.custom-process-img-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
