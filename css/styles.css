@@ -1,14 +1,19 @@
+/* Force l'utilisation de Poppins comme police principale */
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Lexend", sans-serif;
+    font-family: "Poppins", sans-serif !important;
     color: var(--dark);
 }
 
 .custom-font-secondary {
-    font-family: "Lexend", sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .custom-font-tertiary {
-    font-family: "Playfair Display", serif !important;
+    font-family: "Poppins", sans-serif !important;
 }
 
 p {
@@ -20,7 +25,7 @@ p {
 
 .badge {
     font-weight: 500;
-    font-family: "Lexend", sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .custom-graph-svg-color-primary {
@@ -32,7 +37,7 @@ p {
 }
 
 .btn {
-    font-family: "Lexend", sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     padding: 16px 35.2px;
     padding: 1rem 2.2rem;
     font-size: 14.4px;
@@ -50,7 +55,7 @@ p {
 
 @media (min-width: 992px) {
     #header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a {
-        font-family: "Lexend", sans-serif !important;
+        font-family: "Poppins", sans-serif !important;
         font-size: 17px;
         font-weight: 500;
         letter-spacing: -0.6px;
