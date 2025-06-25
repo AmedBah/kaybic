@@ -429,3 +429,24 @@ img[src*="img/process/"] {
     object-position: center;
     border-radius: 8px;
 }
+
+/* Style spécifique pour l'image dans Apropos.html */
+.custom-mask-img-4 {
+    -webkit-mask-image: url(../img/generic/mask-image-4.png);
+    mask-image: url(../img/generic/mask-image-4.png);
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+    -webkit-mask-position: center;
+            mask-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.custom-mask-img-4 img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
