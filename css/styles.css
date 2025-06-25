@@ -325,3 +325,33 @@ p {
         border-radius: 0 !important;
     }
 }
+
+/* Images avec bords arrondis */
+img[src*="generic-2"], 
+img[src*="generic-3"] {
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Alternative avec classes si vous préférez utiliser des classes */
+.img-rounded-generic-2,
+.img-rounded-generic-3 {
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Conteneurs d'images avec bords arrondis */
+.custom-generic-img-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.custom-generic-img-wrapper img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
