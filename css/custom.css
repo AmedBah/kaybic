@@ -119,3 +119,70 @@
         gap: 10px;
     }
 }
+
+/* ===== STYLES POUR ICÔNE AVEC FOND BLANC ET CONTOUR SECONDAIRE ===== */
+
+/* Style pour l'icône de téléphone avec fond blanc et contour secondaire */
+.feature-box-icon-lg.box-shadow-7 {
+    background-color: #fff !important;
+    border: 2px solid var(--secondary, #8a2e2e) !important;
+    border-radius: 50% !important;
+    padding: 15px !important;
+}
+
+/* Icône SVG en couleur secondaire */
+.feature-box-icon-lg.box-shadow-7 img[data-icon] {
+    filter: none !important;
+}
+
+.feature-box-icon-lg.box-shadow-7 .svg-fill-color-secondary {
+    fill: var(--secondary, #8a2e2e) !important;
+}
+
+/* Style générique pour les icônes avec fond blanc et contour secondaire */
+.icon-secondary-style {
+    background-color: #fff !important;
+    border: 2px solid var(--secondary, #8a2e2e) !important;
+    border-radius: 50% !important;
+    padding: 15px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.icon-secondary-style .svg-fill-color-secondary {
+    fill: var(--secondary, #8a2e2e) !important;
+}
+
+/* Pour les icônes plus petites */
+.icon-secondary-style.icon-sm {
+    padding: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* Pour les icônes plus grandes */
+.icon-secondary-style.icon-lg {
+    padding: 20px !important;
+    width: 70px !important;
+    height: 70px !important;
+}
+
+/* ===== FIN STYLES ICÔNE SECONDAIRE ===== */
+
+/* ===== BADGES SERVICES COULEURS ===== */
+.badge-particuliers {
+    background-color: #007bff !important; /* Bleu */
+    color: #fff !important;
+}
+
+.badge-professionnels {
+    background-color: #ffc107 !important; /* Jaune */
+    color: #212529 !important;
+}
+
+.badge-universel {
+    background-color: #28a745 !important; /* Vert */
+    color: #fff !important;
+}
+/* ===== FIN BADGES SERVICES COULEURS ===== */

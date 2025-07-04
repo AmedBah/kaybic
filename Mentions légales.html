@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr" data-style-switcher-options="{'changeLogo': false, 'borderRadius': 0, 'colorPrimary': '#4be296', 'colorSecondary': '#2e895b', 'colorTertiary': '#1f2f28', 'colorQuaternary': '#f7f0e7'}">
-	
+<html lang="fr" >
+	<!-- Header -->
 <head>
-		
-		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -86,8 +84,13 @@
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li>
-													<a href="Accueil.html" class="nav-link active">
+													<a href="Accueil.html" class="nav-link">
 														Accueil
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="Apropos.html">
+														À propos
 													</a>
 												</li>
 												<li class="dropdown">
@@ -97,13 +100,10 @@
 														<li><a href="service-api-payin.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API d'Encaissement</a></li>
 														<li><a href="service-api-payout.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Décaissement</a></li>
 														<li><a href="service-api-transfert.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Transferts International</a></li>
+														<li><a href="service-qr-pay.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">QR Pay</a></li>
 													</ul>
 												</li>
-												<li>
-													<a class="nav-link" href="Apropos.html">
-														À propos
-													</a>
-												</li>
+												
 												<li>
 													<a class="nav-link" href="solutions.html">
 														Solutions
@@ -129,7 +129,7 @@
 								<div class="d-flex justify-content-end align-items-center">
 									<div class="d-none d-sm-flex d-lg-none d-xxl-flex">
 										<img src="img/icons/phone-2.svg" width="24" height="24" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary pe-1'}" />
-										<a href="tel:+225123456789" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+225 12 345 67 89</a>
+										<a href="tel:+22505443221002" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+225 05 44 32 21 02</a>
 									</div>
 									<a href="#" class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1 ms-3 d-none d-md-flex" data-clone-element="1">
 										<span>Documentation <i class="fa-solid fa-arrow-right ms-2"></i></span>
@@ -184,11 +184,45 @@
 											
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">1. Informations légales</h2>
 											
-											<p>Le site web "kaybic.com" est édité par la société Kaybic Africa, SARL au capital de 10.000.000 FCFA, immatriculée au Registre du Commerce et du Crédit Mobilier d'Abidjan sous le numéro CI-ABJ-2020-B-12345, dont le siège social est situé à Cocody Riviera Palmeraie, Abidjan, Côte d'Ivoire.</p>
+											<div class="bg-light p-4 rounded mb-4">
+												<h3 class="text-primary mb-3">Informations sur l'entreprise</h3>
+												<div class="row">
+													<div class="col-md-6 mb-3">
+														<h5 class="mb-2"><strong>Dénomination sociale :</strong></h5>
+														<p class="mb-2">KAY BIC AFRICA SARL</p>
+													</div>
+													<div class="col-md-6 mb-3">
+														<h5 class="mb-2"><strong>Forme juridique :</strong></h5>
+														<p class="mb-2">Société à Responsabilité Limitée (SARL)</p>
+													</div>
+													<div class="col-md-6 mb-3">
+														<h5 class="mb-2"><strong>Capital social :</strong></h5>
+														<p class="mb-2">1.000.000 FCFA</p>
+													</div>
+													<div class="col-md-6 mb-3">
+														<h5 class="mb-2"><strong>RCCM :</strong></h5>
+														<p class="mb-2">CI-ABJ-2024-B-4752</p>
+													</div>
+													<div class="col-md-6 mb-3">
+														<h5 class="mb-2"><strong>Numéro contribuable (NCC) :</strong></h5>
+														<p class="mb-2">2409240134H</p>
+													</div>
+													<div class="col-md-6 mb-3">
+														<h5 class="mb-2"><strong>Code NAEMA :</strong></h5>
+														<p class="mb-2">620100 - Activités de programmation informatique</p>
+													</div>
+													<div class="col-12">
+														<h5 class="mb-2"><strong>Siège social :</strong></h5>
+														<p class="mb-2">Abidjan, Cocody, Riviera Palmeraie, lot 4142, ilot 192, 30 logements</p>
+													</div>
+												</div>
+											</div>
 											
-											<p><strong>Directeur de la publication :</strong> M. John DOE, Directeur Général</p>
-											<p><strong>Contact :</strong> contact@kaybic.com | Téléphone : +225 27 22 123 456</p>
-											<p><strong>Hébergeur du site :</strong> OVH Cloud, 2 rue Kellermann, 59100 Roubaix, France</p>
+											<p>Le site web "kaybic.com" est édité par KAY BIC AFRICA SARL, société spécialisée dans les activités de programmation informatique et les services financiers numériques en Côte d'Ivoire.</p>
+											
+											<p><strong>Directeur de la publication :</strong> Direction Générale KAY BIC AFRICA SARL</p>
+											<p><strong>Contact :</strong> <a href="mailto:contact@kaybic.com">contact@kaybic.com</a> | Téléphone : <a href="tel:+22505443221002">+225 05 44 32 21 02</a></p>
+											<p><strong>Hébergeur du site :</strong> À déterminer selon l'infrastructure choisie</p>
 
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">2. Présentation des services</h2>
 											
@@ -205,15 +239,15 @@
 
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">3. Propriété intellectuelle</h2>
 											
-											<p>L'ensemble des éléments constituant le site kaybic.com (textes, graphismes, logiciels, photographies, images, vidéos, sons, logos, marques, bases de données, etc.) est la propriété exclusive de Kaybic Africa ou fait l'objet d'une autorisation d'utilisation. Ces éléments sont protégés par les lois relatives à la propriété intellectuelle.</p>
+											<p>L'ensemble des éléments constituant le site kaybic.com (textes, graphismes, logiciels, photographies, images, vidéos, sons, logos, marques, bases de données, etc.) est la propriété exclusive de KAY BIC AFRICA SARL ou fait l'objet d'une autorisation d'utilisation. Ces éléments sont protégés par les lois relatives à la propriété intellectuelle en Côte d'Ivoire et au niveau international.</p>
 											
-											<p>Toute reproduction, représentation, modification, publication, adaptation, exploitation commerciale ou non de tout ou partie des éléments du site est strictement interdite sans l'autorisation écrite préalable de Kaybic Africa.</p>
+											<p>Toute reproduction, représentation, modification, publication, adaptation, exploitation commerciale ou non de tout ou partie des éléments du site est strictement interdite sans l'autorisation écrite préalable de KAY BIC AFRICA SARL.</p>
 											
-											<p>La marque "Kaybic" ainsi que le logo associé sont des marques déposées auprès de l'Organisation Africaine de la Propriété Intellectuelle (OAPI) et ne peuvent être utilisés sans autorisation préalable.</p>
+											<p>La marque "Kaybic" ainsi que les logos associés sont des marques de KAY BIC AFRICA SARL et ne peuvent être utilisés sans autorisation préalable écrite.</p>
 
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">4. Protection des données personnelles</h2>
 											
-											<p>Kaybic Africa s'engage à respecter la vie privée des utilisateurs et à traiter leurs données personnelles dans le strict respect de la législation en vigueur, notamment la loi n°2013-450 du 19 juin 2013 relative à la protection des données à caractère personnel en Côte d'Ivoire.</p>
+											<p>KAY BIC AFRICA SARL s'engage à respecter la vie privée des utilisateurs et à traiter leurs données personnelles dans le strict respect de la législation en vigueur, notamment la loi n°2013-450 du 19 juin 2013 relative à la protection des données à caractère personnel en Côte d'Ivoire.</p>
 											
 											<h3 class="text-color-dark text-capitalize font-weight-semibold text-4 mt-4">4.1 Types de données collectées</h3>
 											
@@ -255,21 +289,21 @@
 
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">5. Responsabilité et garanties</h2>
 											
-											<p>Kaybic Africa s'efforce d'assurer au mieux de ses possibilités l'exactitude et la mise à jour des informations diffusées sur son site. Néanmoins, Kaybic Africa ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur le site.</p>
+											<p>KAY BIC AFRICA SARL s'efforce d'assurer au mieux de ses possibilités l'exactitude et la mise à jour des informations diffusées sur son site. Néanmoins, KAY BIC AFRICA SARL ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur le site.</p>
 											
-											<p>Les services de paiement proposés par Kaybic Africa sont fournis dans le cadre d'obligations de moyens. Kaybic Africa ne saurait être tenu responsable des dommages indirects résultant de l'utilisation de ses services.</p>
+											<p>Les services de paiement proposés par KAY BIC AFRICA SARL sont fournis dans le cadre d'obligations de moyens. KAY BIC AFRICA SARL ne saurait être tenu responsable des dommages indirects résultant de l'utilisation de ses services.</p>
 											
-											<p>Kaybic Africa déploie ses meilleurs efforts pour garantir la sécurité des paiements effectués via sa plateforme, conformément aux normes en vigueur dans le secteur du paiement électronique.</p>
+											<p>KAY BIC AFRICA SARL déploie ses meilleurs efforts pour garantir la sécurité des paiements effectués via sa plateforme, conformément aux normes en vigueur dans le secteur du paiement électronique et aux exigences de la BCEAO.</p>
 											
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">6. Législation applicable et juridiction compétente</h2>
 											
 											<p>Les présentes mentions légales sont régies par la loi ivoirienne. En cas de litige, les tribunaux d'Abidjan seront seuls compétents.</p>
 											
-											<p>Pour les utilisateurs résidant dans d'autres pays d'Afrique de l'Ouest où Kaybic Africa opère, des dispositions spécifiques peuvent s'appliquer conformément à la législation locale.</p>
+											<p>Pour les utilisateurs résidant dans d'autres pays d'Afrique de l'Ouest où KAY BIC AFRICA SARL opère, des dispositions spécifiques peuvent s'appliquer conformément à la législation locale et aux accords de la sous-région UEMOA/CEDEAO.</p>
 											
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">7. Autorités de régulation</h2>
 											
-											<p>Kaybic Africa opère ses services de paiement sous l'autorité et la supervision de :</p>
+											<p>KAY BIC AFRICA SARL opère ses services de paiement sous l'autorité et la supervision de :</p>
 											<ul>
 												<li>Banque Centrale des États de l'Afrique de l'Ouest (BCEAO)</li>
 												<li>Autorité de Régulation des Télécommunications de Côte d'Ivoire (ARTCI)</li>
@@ -277,17 +311,17 @@
 											
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">8. Modifications des mentions légales</h2>
 											
-											<p>Kaybic Africa se réserve le droit de modifier les présentes mentions légales à tout moment. Les utilisateurs du site kaybic.com sont donc invités à les consulter régulièrement.</p>
+											<p>KAY BIC AFRICA SARL se réserve le droit de modifier les présentes mentions légales à tout moment. Les utilisateurs du site kaybic.com sont donc invités à les consulter régulièrement.</p>
 											
-											<p>Dernière mise à jour : 15 septembre 2023</p>
+											<p>Dernière mise à jour : Décembre 2024</p>
 											
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">9. Contact</h2>
 											
 											<p>Pour toute question concernant les présentes mentions légales, vous pouvez nous contacter :</p>
 											<ul>
-												<li>Par email : legal@kaybic.com</li>
-												<li>Par téléphone : +225 27 22 123 456</li>
-												<li>Par courrier : Kaybic Africa, Cocody Riviera Palmeraie, 01 BP 1234 Abidjan 01, Côte d'Ivoire</li>
+												<li>Par email : <a href="mailto:contact@kaybic.com">contact@kaybic.com</a></li>
+												<li>Par téléphone : <a href="tel:+22505443221002">+225 05 44 32 21 02</a></li>
+												<li>Par courrier : KAY BIC AFRICA SARL, Abidjan, Cocody, Riviera Palmeraie, lot 4142, ilot 192, 30 logements, Côte d'Ivoire</li>
 											</ul>
 
 										</div>
@@ -299,8 +333,8 @@
 						<div class="blog-sidebar col-lg-4 pt-4 pt-lg-0">
 							<aside class="sidebar">
 								<div class="px-3 mb-4">
-									<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">À propos de Kaybic Africa</h3>
-									<p class="m-0">Kaybic Africa est un agrégateur de solutions de paiement mobile en Côte d'Ivoire et en Afrique de l'Ouest, facilitant les transactions financières pour les entreprises et particuliers.</p>
+									<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">À propos de KAY BIC AFRICA</h3>
+									<p class="m-0">KAY BIC AFRICA SARL est un agrégateur de services numériques spécialisé dans les solutions de paiement mobile en Côte d'Ivoire et dans la sous-région UEMOA/CEDEAO, facilitant les transactions financières pour les entreprises et particuliers.</p>
 								</div>
 								
 								<div class="py-1 clearfix">
@@ -310,11 +344,8 @@
 								<div class="px-3 mt-4">
 									<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">Documents Légaux</h3>
 									<div class="pb-2 mb-1">
-										<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Conditions Générales d'Utilisation</a>
-										<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Politique de Confidentialité</a>
-										<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Politique de Lutte Anti-Blanchiment</a>
-										<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Politique de Cookies</a>
-										<a href="#" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Déclaration d'Accessibilité</a>
+										<a href="politique_confidentialité.html" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Politique de Confidentialité</a>
+										<a href="Politique-protection-données-personnelles(DCP).html" class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4">Protection des Données Personnelles</a>
 									</div>
 								</div>
 								
@@ -342,7 +373,7 @@
 									<h3 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3">Besoin d'aide?</h3>
 									<div class="pb-2 mb-1">
 										<p>Notre équipe de support est disponible pour répondre à toutes vos questions:</p>
-										<a href="tel:+22527221234" class="btn btn-primary mt-2">Contactez-nous</a>
+										<a href="tel:+22505443221002" class="btn btn-primary mt-2">Contactez-nous</a>
 									</div>
 								</div>
 							</aside>
@@ -397,35 +428,32 @@
 							<h4 class="text-color-dark font-weight-bold mb-3">Navigation</h4>
 							<ul class="list list-unstyled">
 								<li>
-									<a href="#accueil" class="text-color-grey text-color-hover-primary">
+									<a href="Accueil.html" class="text-color-grey text-color-hover-primary">
 										Accueil
 									</a>
 								</li>
 								<li>
-									<a href="#services" class="text-color-grey text-color-hover-primary">Services</a>
-								</li>
-								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#a-propos">
-										À Propos
+									<a href="Apropos.html" class="text-color-grey text-color-hover-primary">
+										À propos
 									</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#integration">
+									<a href="services.html" class="text-color-grey text-color-hover-primary">
+										Produits
+									</a>
+								</li>
+								<li>
+									<a href="solutions.html" class="text-color-grey text-color-hover-primary">
+										Solutions
+									</a>
+								</li>
+								<li>
+									<a href="process-integration-support.html" class="text-color-grey text-color-hover-primary">
 										Intégration
 									</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#partenaires">
-										Partenaires
-									</a>
-								</li>
-								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#blog">
-										Blog
-									</a>
-								</li>
-								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#contact">
+									<a href="contact.html" class="text-color-grey text-color-hover-primary">
 										Contact
 									</a>
 								</li>
@@ -434,9 +462,10 @@
 						<div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
 							<h4 class="text-color-dark font-weight-bold mb-3">Nos Services</h4>
 							<ul class="list list-unstyled">
-								<li><a href="#api-encaissement" class="text-color-grey text-color-hover-primary">API PayIN</a></li>
-								<li><a href="#api-decaissement" class="text-color-grey text-color-hover-primary">API PayOUT</a></li>
-								<li><a href="#agregateur-mobile" class="text-color-grey text-color-hover-primary">Transfert International</a></li>
+								<li><a href="service-api-payin.html" class="text-color-grey text-color-hover-primary">API d'Encaissement</a></li>
+								<li><a href="service-api-payout.html" class="text-color-grey text-color-hover-primary">API de Décaissement</a></li>
+								<li><a href="service-api-transfert.html" class="text-color-grey text-color-hover-primary">Transferts International</a></li>
+								<li><a href="service-qr-pay.html" class="text-color-grey text-color-hover-primary">QR Pay</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-3 pt-4 pt-lg-0">

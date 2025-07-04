@@ -30,7 +30,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 		<!-- Web Fonts  -->		
-         <link id="googleFonts" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" type="text/css">
+		 <link id="googleFonts" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">		
@@ -65,26 +65,20 @@
 			gtag('config', 'G-T21B0FFW8M');
 		</script>
 		<style>
-			/* Style du loader KAYBIC */
-			.cssload-float-rings-loader .cssload-logo-center {
+			/* Style du loader KAYBIC - Version harmonisée */
+			.cssload-logo-center {
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 100px;
-				height: 100px;
 				z-index: 10;
-				animation: logoFade 2s infinite alternate;
-				padding: 5px;
 			}
-
-			.cssload-float-rings-loader .cssload-logo-center img {
-				width: 100%;
+			
+			.cssload-logo-center img {
+				width: 50px;
 				height: auto;
-				filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7));
+				opacity: 0.9;
+				animation: logoFade 2s ease-in-out infinite alternate;
 			}
 
 			@keyframes logoFade {
@@ -93,7 +87,6 @@
 			}
 			
 			.cssload-float-rings-loader {
-				position: relative;
 				transform: scale(1.7);
 			}
 			
@@ -152,6 +145,7 @@
 														<li><a href="service-api-payin.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API d'Encaissement</a></li>
 														<li><a href="service-api-payout.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Décaissement</a></li>
 														<li><a href="service-api-transfert.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Transferts International</a></li>
+														<li><a href="service-qr-pay.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">QR Pay</a></li>
 													</ul>
 												</li>
 												<li>
@@ -184,7 +178,7 @@
 								<div class="d-flex justify-content-end align-items-center">
 									<div class="d-none d-sm-flex d-lg-none d-xxl-flex">
 										<img src="img/icons/phone-2.svg" width="24" height="24" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary pe-1'}" />
-										<a href="tel:+22530000869" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+225 30 00 08 69</a>
+										<a href="tel:+22505443221002" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+225 05 44 32 21 02</a>
 									</div>
 									<a href="#" class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1 ms-3 d-none d-md-flex" data-clone-element="1">
 										<span>Démo <i class="fa-solid fa-arrow-right ms-2"></i></span>
@@ -200,29 +194,29 @@
 			</header>
 			
 			<div role="main" class="main px-3 px-lg-5">                <div class="page-header py-0 bg-primary px-3 px-xl-0 border-radius-2 p-relative mb-5 overflow-hidden">
-                    <div class="overflow-hidden p-absolute top-0 left-0 bottom-0 h-100 w-100">
-                        <div class="custom-el-5 custom-pos-4">
-                            <img class="img-fluid opacity-2 opacity-hover-2" src="img/svg/waves.svg" alt="">
-                        </div>
-                    </div>                    
-                    <div class="container p-relative z-index-1 py-2">
-                        <div class="row mh-200px mh-lg-300px align-items-center py-4">
-                            <div class="col">
-                                <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                    <span class="badge bg-color-dark-rgba-10 text-light rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3"><span class="d-inline-flex py-1 px-2">Comment nous intégrer</span></span>
-                                </div>
-                                <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-                                    <h1 class="text-dark text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">Processus d'Intégration</h1>
-                                </div>                                <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-                                    <ul class="breadcrumb d-flex text-3-5 font-weight-semi-bold pb-2 mb-3">
-                                        <li><a href="Accueil.html" class="text-dark text-decoration-none">Accueil</a></li>
-                                        <li class="active">Processus d'Intégration</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					<div class="overflow-hidden p-absolute top-0 left-0 bottom-0 h-100 w-100">
+						<div class="custom-el-5 custom-pos-4">
+							<img class="img-fluid opacity-2 opacity-hover-2" src="img/svg/waves.svg" alt="">
+						</div>
+					</div>                    
+					<div class="container p-relative z-index-1 py-2">
+						<div class="row mh-200px mh-lg-300px align-items-center py-4">
+							<div class="col">
+								<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+									<span class="badge bg-color-dark-rgba-10 text-light rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3"><span class="d-inline-flex py-1 px-2">Comment nous intégrer</span></span>
+								</div>
+								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<h1 class="text-dark text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">Processus d'Intégration</h1>
+								</div>                                <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<ul class="breadcrumb d-flex text-3-5 font-weight-semi-bold pb-2 mb-3">
+										<li><a href="Accueil.html" class="text-dark text-decoration-none">Accueil</a></li>
+										<li class="active text-light">Processus d'Intégration</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<div class="container pt-lg-5" id="intro">
 	<div class="row mb-5">
@@ -236,135 +230,135 @@
 		</div>
 	</div>                    <div class="row counters mb-5">
 						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                            <div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-                                <p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="10" data-append="+"></mark></p>
-                                <span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Pays couverts</span>
-                            </div>
-                        </div>
+							<div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+								<p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="10" data-append="+"></mark></p>
+								<span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Pays couverts</span>
+							</div>
+						</div>
 						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                            <div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                <p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="500" data-append="+"></mark></p>
-                                <span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Intégrations réussies</span>
-                            </div>
-                        </div>
+							<div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+								<p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="500" data-append="+"></mark></p>
+								<span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Intégrations réussies</span>
+							</div>
+						</div>
 						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                            <div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                <p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="8" data-append="+"></mark></p>
-                                <span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Opérateurs partenaires</span>
-                            </div>
-                        </div>
+							<div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+								<p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="8" data-append="+"></mark></p>
+								<span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Opérateurs partenaires</span>
+							</div>
+						</div>
 						<div class="col-md-6 col-lg-3 mb-4 mb-lg-0 text-center">
-                            <div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="99.9" data-append="%"></mark></p>
-                                <span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Disponibilité des API</span>
-                            </div>
-                        </div>
-                    </div>
+							<div class="d-flex flex-column pt-2 pb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<p class="d-inline-block mb-0 font-weight-bold line-height-1 counter"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0" data-to="99.9" data-append="%"></mark></p>
+								<span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic pt-2">Disponibilité des API</span>
+							</div>
+						</div>
+					</div>
 
-                    <div class="row counters mb-lg-5">
+					<div class="row counters mb-lg-5">
 						<div class="col">
-                            <section class="timeline mt-5">
-                                <div class="timeline-body">
-                                    <div class="timeline-number bg-color-secondary box-shadow-8">
-                                        <h3 class="text-light text-5">1</h3>
-                                    </div>                                    <div class="row mt-5 align-items-center justify-content-around mb-5">
-                                        <div class="col-lg-5 bg-color-light p-3 order-0">
-                                            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                                <img src="img/process/process-1.jpg" class="img-fluid border-radius-2" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
-                                            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                                <span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
-                                                    <span class="d-inline-flex py-1 px-2">Étape 1</span>
-                                                </span>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                                <h4 class="text-6 font-weight-semibold line-height-1 mb-4">Demande d'accès à l'API</h4>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                                <p class="pe-lg-5">Commencez par nous contacter pour demander l'accès à notre API. Notre équipe commerciale évaluera vos besoins spécifiques, vous présentera les différentes options d'intégration et vous guidera dans le choix des services adaptés à votre entreprise : encaissement, décaissement ou transferts internationaux.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+							<section class="timeline mt-5">
+								<div class="timeline-body">
+									<div class="timeline-number bg-color-secondary box-shadow-8">
+										<h3 class="text-light text-5">1</h3>
+									</div>                                    <div class="row mt-5 align-items-center justify-content-around mb-5">
+										<div class="col-lg-5 bg-color-light p-3 order-0">
+											<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+												<img src="img/process/process-1.jpg" class="img-fluid border-radius-2" alt="">
+											</div>
+										</div>
+										<div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
+											<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+												<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
+													<span class="d-inline-flex py-1 px-2">Étape 1</span>
+												</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+												<h4 class="text-6 font-weight-semibold line-height-1 mb-4">Demande d'accès à l'API</h4>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+												<p class="pe-lg-5">Commencez par nous contacter pour demander l'accès à notre API. Notre équipe commerciale évaluera vos besoins spécifiques, vous présentera les différentes options d'intégration et vous guidera dans le choix des services adaptés à votre entreprise : encaissement, décaissement ou transferts internationaux.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="timeline-number bg-color-secondary box-shadow-8">
-                                        <h3 class="text-light text-5">2</h3>
-                                    </div>                                    <div class="row mt-5 align-items-center justify-content-around">
-                                        <div class="col-lg-5 bg-color-light p-3 order-lg-1">
-                                            <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0">
-                                                <img src="img/process/process-2.jpg" class="img-fluid border-radius-2" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
-                                            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                                <span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
-                                                    <span class="d-inline-flex py-1 px-2">Étape 2</span>
-                                                </span>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                                <h4 class="text-6 font-weight-semibold line-height-1 mb-4">Création et configuration du compte</h4>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                                <p class="pe-lg-5">Après validation de votre demande, nous créons votre compte sur notre plateforme et vous fournissons vos identifiants d'accès à l'environnement de test (sandbox). Vous recevrez également les clés API nécessaires et l'accès à notre documentation technique détaillée.</p>
-                                            </div>		
-                                        </div>
-                                    </div>
+									<div class="timeline-number bg-color-secondary box-shadow-8">
+										<h3 class="text-light text-5">2</h3>
+									</div>                                    <div class="row mt-5 align-items-center justify-content-around">
+										<div class="col-lg-5 bg-color-light p-3 order-lg-1">
+											<div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0">
+												<img src="img/process/process-2.jpg" class="img-fluid border-radius-2" alt="">
+											</div>
+										</div>
+										<div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
+											<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+												<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
+													<span class="d-inline-flex py-1 px-2">Étape 2</span>
+												</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+												<h4 class="text-6 font-weight-semibold line-height-1 mb-4">Création et configuration du compte</h4>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+												<p class="pe-lg-5">Après validation de votre demande, nous créons votre compte sur notre plateforme et vous fournissons vos identifiants d'accès à l'environnement de test (sandbox). Vous recevrez également les clés API nécessaires et l'accès à notre documentation technique détaillée.</p>
+											</div>		
+										</div>
+									</div>
 
-                                    <div class="timeline-number bg-color-secondary box-shadow-8">
-                                        <h3 class="text-light text-5">3</h3>
-                                    </div>                                    <div class="row mt-5 align-items-center justify-content-around mb-5">
-                                        <div class="col-lg-5 bg-color-light p-3 order-0">
-                                            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                                <img src="img/process/process-3.jpg" class="img-fluid border-radius-2" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
-                                            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                                <span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
-                                                    <span class="d-inline-flex py-1 px-2">Étape 3</span>
-                                                </span>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                                <h4 class="text-6 font-weight-semibold line-height-1 mb-4">Développement et tests</h4>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                                <p class="pe-lg-5">Développez votre intégration en utilisant notre environnement de test. Notre documentation technique complète, nos SDKs (PHP, Java, Node.js, Python) et nos exemples de code facilitent ce processus. Notre équipe technique reste disponible pour vous assister pendant cette phase cruciale, vous aidant à résoudre les problèmes éventuels.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="timeline-number bg-color-secondary box-shadow-8">
+										<h3 class="text-light text-5">3</h3>
+									</div>                                    <div class="row mt-5 align-items-center justify-content-around mb-5">
+										<div class="col-lg-5 bg-color-light p-3 order-0">
+											<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+												<img src="img/process/process-3.jpg" class="img-fluid border-radius-2" alt="">
+											</div>
+										</div>
+										<div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
+											<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+												<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
+													<span class="d-inline-flex py-1 px-2">Étape 3</span>
+												</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+												<h4 class="text-6 font-weight-semibold line-height-1 mb-4">Développement et tests</h4>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+												<p class="pe-lg-5">Développez votre intégration en utilisant notre environnement de test. Notre documentation technique complète, nos SDKs (PHP, Java, Node.js, Python) et nos exemples de code facilitent ce processus. Notre équipe technique reste disponible pour vous assister pendant cette phase cruciale, vous aidant à résoudre les problèmes éventuels.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="timeline-number bg-color-secondary box-shadow-8">
-                                        <h3 class="text-light text-5">4</h3>
-                                    </div>
-                            
-                                    <div class="row mt-5 align-items-center justify-content-around">
-                                        <div class="col-lg-5 bg-color-light p-3 order-lg-1">
-                                            <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0">
-                                                <img src="img/process/process-4.jpg" class="img-fluid border-radius-2" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
-                                            <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-                                                <span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
-                                                    <span class="d-inline-flex py-1 px-2">Étape 4</span>
-                                                </span>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                                <h4 class="text-6 font-weight-semibold line-height-1 mb-4">Mise en production et accompagnement continu</h4>
-                                            </div>
-                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                                <p class="pe-lg-5">Après validation des tests, nous activons votre accès en production. Notre équipe assure un suivi régulier, vous fournit des rapports détaillés et reste disponible pour toute question ou optimisation. Nous vous accompagnons pour garantir la fiabilité et la performance de vos transactions.</p>
-                                            </div>		
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </section>
-                        </div>
-                    </div>
-                </div>
-                
+									<div class="timeline-number bg-color-secondary box-shadow-8">
+										<h3 class="text-light text-5">4</h3>
+									</div>
+							
+									<div class="row mt-5 align-items-center justify-content-around">
+										<div class="col-lg-5 bg-color-light p-3 order-lg-1">
+											<div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0">
+												<img src="img/process/process-4.jpg" class="img-fluid border-radius-2" alt="">
+											</div>
+										</div>
+										<div class="col-lg-5 bg-color-light p-3 pt-0 text-center text-lg-start">
+											<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+												<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3">
+													<span class="d-inline-flex py-1 px-2">Étape 4</span>
+												</span>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+												<h4 class="text-6 font-weight-semibold line-height-1 mb-4">Mise en production et accompagnement continu</h4>
+											</div>
+											<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+												<p class="pe-lg-5">Après validation des tests, nous activons votre accès en production. Notre équipe assure un suivi régulier, vous fournit des rapports détaillés et reste disponible pour toute question ou optimisation. Nous vous accompagnons pour garantir la fiabilité et la performance de vos transactions.</p>
+											</div>		
+										</div>
+									</div>
+								</div>
+							
+							</section>
+						</div>
+					</div>
+				</div>
+				
 				<!-- FAQs -->
 				<div class="text-center overflow-hidden w-100">
 	<div class="appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
@@ -443,12 +437,12 @@
 				<p class="pe-lg-5">Notre processus d'intégration éprouvé est conçu pour assurer une connexion rapide, sécurisée et efficace à nos API de paiement mobile money. Prêt à transformer votre entreprise grâce à nos solutions de paiement innovantes ? Contactez-nous dès aujourd'hui pour démarrer votre intégration.</p>
 			</div>
 
-                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="py-2 d-flex flex-column flex-md-row align-items-center text-4-5 n-ls-1 text-dark">
-                                    <img src="img/icons/icon-4.svg" width="28" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary me-md-2'}" /> <strong class="custom-font-secondary pe-2">Rejoignez-nous</strong><span class="d-none d-md-inline-block pe-2"> | </span>Plus de 500 entreprises connectées!
-                                    <p class="ms-md-2 mb-0 text-3-5 p-relative bottom-2"><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i></p>
-                                </div>
-                            </div>							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="py-2 d-flex flex-column flex-md-row align-items-center text-4-5 n-ls-1 text-dark">
+									<img src="img/icons/icon-4.svg" width="28" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary me-md-2'}" /> <strong class="custom-font-secondary pe-2">Rejoignez-nous</strong><span class="d-none d-md-inline-block pe-2"> | </span>Plus de 500 entreprises connectées!
+									<p class="ms-md-2 mb-0 text-3-5 p-relative bottom-2"><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i></p>
+								</div>
+							</div>							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
 				<div class="d-flex flex-column flex-lg-row pt-3 mt-2 align-items-lg-center">
 					<div class="text-center text-lg-start">
 						<a href="contact.html" class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1" data-clone-element="1">
@@ -461,7 +455,7 @@
 		</div>
 		<div class="col-lg-6 text-center p-relative py-5">
 			<div class="opacity-2 p-absolute w-100">
-				<img src="img/icons/abstract-bg-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary w-100'}" />
+				<img src="img/icons/abstract-bg-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary w-100'}" />
 			</div>
 			<div class="cascading-images-wrapper custom-cascading-images-wrapper-1">
 				<div class="cascading-images p-relative">
@@ -478,25 +472,25 @@
 	</div>
 </div>
 
-                <!-- Explore Further -->
-                <div class="bg-secondary border-radius-2 p-relative overflow-hidden">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col px-0 text-center text-color-light">                                <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-center">
-                                    <div class="me-lg-4 flex-grow-1 flex-lg-grow-0">
-                                        <span class="d-inline-block text-3 py-4 px-5 text-uppercase font-weight-medium custom-bg-gradient-1 w-100 rounded-pill">Explorer davantage:</span>
-                                    </div>
-                                    <div class="me-3 ps-3 p-relative bottom-1 pt-3 pt-lg-0">
-                                        <a href="services.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Nos Solutions <i class="fas fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                    <div class="py-3 py-lg-0 p-relative bottom-1 border-start border-color-light-rgba-20">
-                                        <a href="contact.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Demander une démo <i class="fas fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<!-- Explore Further -->
+				<div class="bg-secondary border-radius-2 p-relative overflow-hidden">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col px-0 text-center text-color-light">                                <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-center">
+									<div class="me-lg-4 flex-grow-1 flex-lg-grow-0">
+										<span class="d-inline-block text-3 py-4 px-5 text-uppercase font-weight-medium custom-bg-gradient-1 w-100 rounded-pill">Explorer davantage:</span>
+									</div>
+									<div class="me-3 ps-3 p-relative bottom-1 pt-3 pt-lg-0">
+										<a href="services.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Nos Solutions <i class="fas fa-arrow-right ms-2"></i></a>
+									</div>
+									<div class="py-3 py-lg-0 p-relative bottom-1 border-start border-color-light-rgba-20">
+										<a href="contact.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Demander une démo <i class="fas fa-arrow-right ms-2"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 
@@ -543,35 +537,32 @@
 							<h4 class="text-color-dark font-weight-bold mb-3">Navigation</h4>
 							<ul class="list list-unstyled">
 								<li>
-									<a href="#accueil" class="text-color-grey text-color-hover-primary">
+									<a href="Accueil.html" class="text-color-grey text-color-hover-primary">
 										Accueil
 									</a>
 								</li>
 								<li>
-									<a href="#services" class="text-color-grey text-color-hover-primary">Services</a>
-								</li>
-								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#a-propos">
-										À Propos
+									<a href="Apropos.html" class="text-color-grey text-color-hover-primary">
+										À propos
 									</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#integration">
+									<a href="services.html" class="text-color-grey text-color-hover-primary">
+										Produits
+									</a>
+								</li>
+								<li>
+									<a href="solutions.html" class="text-color-grey text-color-hover-primary">
+										Solutions
+									</a>
+								</li>
+								<li>
+									<a href="process-integration-support.html" class="text-color-grey text-color-hover-primary">
 										Intégration
 									</a>
 								</li>
 								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#partenaires">
-										Partenaires
-									</a>
-								</li>
-								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#blog">
-										Blog
-									</a>
-								</li>
-								<li>
-									<a class="text-color-grey text-color-hover-primary" href="#contact">
+									<a href="contact.html" class="text-color-grey text-color-hover-primary">
 										Contact
 									</a>
 								</li>
@@ -660,26 +651,26 @@
 
 <!-- Enfin, les scripts personnalisés -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        if (window.jQuery && jQuery().owlCarousel) {
-            jQuery('.carousel-half-full-width-right .owl-carousel').owlCarousel({
-                responsive: {
-                    0: { items: 1 },
-                    768: { items: 3 },
-                    992: { items: 4 },
-                    1200: { items: 5 }
-                },
-                loop: true,
-                nav: true,
-                dots: false,
-                margin: 20,
-                navText: [
-                    '<span class="owl-prev"><i class="fas fa-chevron-left"></i></span>',
-                    '<span class="owl-next"><i class="fas fa-chevron-right"></i></span>'
-                ]
-            });
-        }
-    });
+	document.addEventListener('DOMContentLoaded', function() {
+		if (window.jQuery && jQuery().owlCarousel) {
+			jQuery('.carousel-half-full-width-right .owl-carousel').owlCarousel({
+				responsive: {
+					0: { items: 1 },
+					768: { items: 3 },
+					992: { items: 4 },
+					1200: { items: 5 }
+				},
+				loop: true,
+				nav: true,
+				dots: false,
+				margin: 20,
+				navText: [
+					'<span class="owl-prev"><i class="fas fa-chevron-left"></i></span>',
+					'<span class="owl-next"><i class="fas fa-chevron-right"></i></span>'
+				]
+			});
+		}
+	});
 </script>
 		
 		
