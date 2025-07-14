@@ -131,7 +131,7 @@
 								<div class="d-flex justify-content-end align-items-center">
 									<div class="d-none d-sm-flex d-lg-none d-xxl-flex">
 										<img src="img/icons/phone-2.svg" width="24" height="24" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary pe-1'}" />
-										<a href="tel:+22505443221002" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+225 05 44 32 21 02</a>
+										<a href="tel:+22505443221002" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+2252530000869</a>
 									</div>
 									<a href="#" class="btn btn-rounded box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1 ms-3 d-none d-md-flex" style="background-color: #d33636; color: white;" data-clone-element="1">
 										<span>Démo <i class="fa-solid fa-arrow-right ms-2"></i></span>
@@ -219,7 +219,7 @@
                                     <p class="mb-0 text-3-5 line-height-7">Riviera Palmeraie, Cité du Bonheur</p>
                                     <p class="mb-0 text-3-5 line-height-7">Abidjan, Côte d'Ivoire</p>
                                     <p class="mb-0 text-3-5 line-height-7">Région Afrique de l'Ouest</p>
-                                    <p class="mb-0 text-3-5 line-height-7"><a href="https://www.google.com/maps" target="_blank" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">Voir sur la carte</a></p>
+                                    <p class="mb-0 text-3-5 line-height-7"><a href="https://www.google.com/maps/place/Riviera+Palmeraie,+Abidjan,+C%C3%B4te+d'Ivoire/@5.3599517,-3.9648731,15z" target="_blank" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">Voir sur la carte</a></p>
                                 </div>
                             </div>
 
@@ -229,7 +229,7 @@
                                 </div>
                                 <div class="feature-box-info ps-3">
                                     <strong class="d-block text-4-5 text-dark mb-1">E-mail</strong>
-                                    <p class="mb-0 text-3-5 line-height-7"><a href="mailto:contact@kaybic.com" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">contact@kaybic.com</a></p>
+                                    <p class="mb-0 text-3-5 line-height-7"><a href="mailto:support@easytransfert.ci" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">support@easytransfert.ci</a></p>
                                 </div>
                             </div>
 
@@ -242,7 +242,7 @@
                                 </div>
                                 <div class="feature-box-info ps-3">
                                     <strong class="d-block text-4-5 text-dark mb-1">Téléphone</strong>
-                                    <p class="mb-0 text-3-5 line-height-7"><a href="tel:+22505443221002" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">+225 05 44 32 21 02</a></p>
+                                    <p class="mb-0 text-3-5 line-height-7"><a href="tel:+22505443221002" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">+2252530000869</a></p>
                                 </div>
                             </div>
 
@@ -593,58 +593,59 @@
 
 
 	<!-- Google Maps -->
-		<script>
-
+	<script>
+		function initMap() {
+			console.log('Initialisation de la carte...');
 			
-			(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-				({key: "AIzaSyAZaHjy32TPVMxl1BgQRfulm2PKpbwCdR4", v: "weekly"});
-
-			async function initMap() {
-				const { Map, InfoWindow } = await google.maps.importLibrary("maps");
-				const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
-					"marker",
-				);
-				const map = new Map(document.getElementById("googlemaps"), {
+			// Position de KAYBIC AFRICA à Abidjan, Côte d'Ivoire
+			var kaybicLocation = { lat: 5.3599517, lng: -3.9648731 };
+			
+			try {
+				// Créer la carte centrée sur KAYBIC AFRICA
+				var map = new google.maps.Map(document.getElementById('googlemaps'), {
 					zoom: 14,
-					center: { lat: -37.817240, lng: 144.955820 },
-					mapId: "bacc27c8c034b32e",
+					center: kaybicLocation,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
 				});
-				const markers = [
-					{
-						position: { lat: -37.817240, lng: 144.955820 },
-						title: "Office 1<br>Melbourne, 121 King St, Australia<br>Phone: 123-456-1234",
-					}
-				];
-
-				const infoWindow = new InfoWindow();
-
-				markers.forEach(({ position, title }, i) => {
-					const pin = new PinElement({
-						background: "#e36159",
-						borderColor: "#e36159",
-						glyphColor: "#FFF",
-					});
-					const marker = new AdvancedMarkerElement({
-						position,
-						map,
-						title: `${title}`,
-						content: pin.element,
-					});
-
-					marker.addListener("click", ({ domEvent, latLng }) => {
-						const { target } = domEvent;
-
-						infoWindow.close();
-						infoWindow.setContent(marker.title);
-						infoWindow.open(marker.map, marker);
-					});
-				});	
-
+				
+				console.log('Carte créée avec succès');
+				
+				// Marqueur pour KAYBIC AFRICA
+				var kaybicMarker = new google.maps.Marker({
+					position: kaybicLocation,
+					map: map,
+					title: 'KAYBIC AFRICA - Abidjan',
+					animation: google.maps.Animation.DROP
+				});
+				
+				// Info window pour KAYBIC AFRICA
+				var kaybicInfo = new google.maps.InfoWindow({
+					content: '<div style="padding: 10px;"><h4>KAYBIC AFRICA</h4><p>Riviera Palmeraie, Cité du Bonheur<br>Abidjan, Côte d\'Ivoire<br><strong>Tél:</strong> +2252530000869</p></div>'
+				});
+				
+				// Clic sur le marqueur KAYBIC
+				kaybicMarker.addListener('click', function() {
+					kaybicInfo.open(map, kaybicMarker);
+				});
+				
+				console.log('Marqueur KAYBIC AFRICA ajouté');
+				
+			} catch (error) {
+				console.error('Erreur lors de la création de la carte:', error);
 			}
-
-			initMap();	
-
-		</script>
+		}
+		
+		// Message si Google Maps ne se charge pas
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				if (typeof google === 'undefined') {
+					console.error('Google Maps API non chargée');
+					document.getElementById('googlemaps').innerHTML = '<div style="padding: 20px; text-align: center; background: #f8f9fa; border-radius: 8px;"><h4>Carte temporairement indisponible</h4><p>La carte Google Maps ne peut pas être chargée pour le moment.</p><p><strong>Adresse:</strong> Riviera Palmeraie, Cité du Bonheur, Abidjan, Côte d\'Ivoire</p></div>';
+				}
+			}, 3000);
+		});
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZaHjy32TPVMxl1BgQRfulm2PKpbwCdR4&callback=initMap&loading=async" defer></script>
 
 		<!-- Current Page Vendor and Views -->
 		<script src="js/views/view.contact.js"></script>
