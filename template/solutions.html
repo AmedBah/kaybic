@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+		   
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Solutions - KAYBIC AFRICA | Développement informatique, Agrégation Mobile Money et Audit de code</title>	
+
+		<meta name="keywords" content="Développement informatique, Agrégation Mobile Money, Audit de code, Solutions financières, API Paiement, KAYBIC AFRICA" />
+		<meta name="description" content="Découvrez les solutions KAYBIC AFRICA : développement informatique sur mesure, agrégation de paiement mobile money et services d'audit & reprise de code.">
+		<meta name="author" content="KAYBIC AFRICA">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="128x128" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="img/favicon.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="img/favicon.png">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->		
+		 <link id="googleFonts" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		
+
+		<!-- CSS -->		
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Skin CSS -->		
+		<link rel="stylesheet" href="css/skin.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Style personnalisé pour le logo dans le floating ring -->
+		<style>
+			.cssload-logo-center {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 10;
+			}
+			
+			.cssload-logo-center img {
+				width: 50px;
+				height: auto;
+				opacity: 0.9;
+				animation: logoFade 2s ease-in-out infinite alternate;
+			}
+			
+			@keyframes logoFade {
+				0% { opacity: 0.7; }
+				100% { opacity: 1; }
+			}
+			
+			.cssload-float-rings-loader {
+				transform: scale(1.7);
+			}
+			
+			.bounce-loader {
+				transform: scale(1.5);
+			}
+			
+			.loading-overlay {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-T21B0FFW8M"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-T21B0FFW8M');
+		</script>
+
+	</head>
+
+	<!-- Fixed the loading issue by adding proper data attributes -->
+	<body class="loading-overlay-showing solutions-page" data-loading-overlay data-plugin-options="{'hideDelay': 800, 'effect': 'floatRings'}">>
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="cssload-float-rings-loader">
+					<div class="cssload-float-rings-inner cssload-one"></div>
+					<div class="cssload-float-rings-inner cssload-two"></div>
+					<div class="cssload-float-rings-inner cssload-three"></div>
+				</div>
+				<div class="cssload-logo-center">
+					<img src="img/logo.png" alt="KAYBIC AFRICA Logo">
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<header id="header" data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 100}">
+				<div class="header-body border-top-0 h-auto box-shadow-none">
+					<div class="container-fluid px-3 px-lg-5 p-static">
+						<div class="row align-items-center py-3">
+							<div class="col-auto col-lg-2 col-xxl-3 me-auto me-lg-0">
+								<div class="header-logo" data-clone-element-to="#offCanvasLogo">
+									<a href="Accueil.html">
+										<img alt="kaybicafrica" width="120" src="img/logo.png" data-img-suffix-primary>
+									</a>
+								</div>
+							</div>
+							<div class="col-auto col-lg-8 col-xxl-6 justify-content-lg-center">
+								<div class="header-nav header-nav-links justify-content-lg-center">
+									<div class="header-nav-main header-nav-main-text-capitalize header-nav-main-arrows header-nav-main-effect-2">
+										<nav class="collapse">
+											<ul class="nav nav-pills" id="mainNav">
+												<li>
+													<a href="Accueil.html" class="nav-link">
+														Accueil
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="Apropos.html">
+														À propos
+													</a>
+												</li>
+												<li class="dropdown">
+													<a href="services.html" class="nav-link dropdown-toggle">Produits</a>
+													<ul class="dropdown-menu">
+														<li><a href="services.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Vue d'ensemble</a></li>
+														<li><a href="service-api-payin.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API d'Encaissement</a></li>
+														<li><a href="service-api-payout.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Décaissement</a></li>
+														<li><a href="service-api-transfert.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Transferts International</a></li>
+														<li><a href="service-qr-pay.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">QR Pay</a></li>
+													</ul>
+												</li>
+												
+												<li>
+													<a class="nav-link active" href="solutions.html">
+														Solutions
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="process-integration-support.html">
+														Intégration
+													</a>
+												</li>
+												
+												<li>
+													<a class="nav-link" href="contact.html">
+														Contact
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<div class="col-auto col-lg-2 col-xxl-3">
+								<div class="d-flex justify-content-end align-items-center">
+									<div class="d-none d-sm-flex d-lg-none d-xxl-flex">
+										<img src="img/icons/phone-2.svg" width="24" height="24" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary pe-1'}" />
+										<a href="tel:+2252530000869" class="text-decoration-none font-secondary text-4 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap">+225 25 30 00 08 69</a>
+									</div>
+									<a href="#" class="btn btn-rounded box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1 ms-3 d-none d-md-flex" style="background-color: #d33636; color: white;" data-clone-element="1">
+										<span>Démo <i class="fa-solid fa-arrow-right ms-2"></i></span>
+									</a>
+									<button class="btn header-btn-collapse-nav rounded-pill" data-bs-toggle="offcanvas" href="#offcanvasMain" role="button" aria-controls="offcanvasMain">
+										<i class="fas fa-bars"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main px-3 px-lg-5">
+				<div class="page-header py-0 bg-primary px-3 px-xl-0 border-radius-2 p-relative mb-5">
+					<div class="overflow-hidden p-absolute top-0 left-0 bottom-0 h-100 w-100">
+						<div class="custom-el-5 custom-pos-4">
+							<img class="img-fluid opacity-2 opacity-hover-2" src="img/svg/waves.svg" alt="">
+						</div>
+					</div>                    
+					<div class="container p-relative z-index-1 py-2">
+						<div class="row align-items-center py-4">
+							<div class="col-8 col-md-7">
+								<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+									<span class="badge bg-color-dark-rgba-10 text-light rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-3"><span class="d-inline-flex py-1 px-2">Nos domaines d'expertise</span></span>
+								</div>
+								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<h1 class="text-light text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">Nos Solutions</h1>
+								</div>
+								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<ul class="breadcrumb d-flex text-3-5 font-weight-semi-bold pb-2 mb-3">
+										<li><a href="Accueil.html" class="text-light text-decoration-none">Accueil</a></li>
+										<li class="active text-light">Nos Solutions</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-md-5 p-relative">
+								
+								<div class="custom-mask-img custom-mask-img-4 custom-el-6">
+									<img src="img/generic/generic-11.jpg" loading="lazy" class="img-fluid" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Icons -->
+				<div class="border-bottom border-bottom-color-grey-100 mb-4">
+					<div class="container">
+						<div class="row py-5">
+							<div class="col-lg-4 py-3 py-lg-0 mb-4 mb-sm-5 mb-lg-0">
+								<div class="feature-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+									<div class="feature-box-icon bg-transparent w-auto h-auto p-0 top-0 align-items-center">
+										
+										<img src="img/icons/icon-5.svg" width="44" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary'}" />
+									</div>
+									<div class="feature-box-info w-100 ps-4 ms-1">
+										<h4 class="mt-2 mb-0">Développement de Solutions</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 py-3 py-lg-0 mb-4 mb-sm-5 mb-lg-0">
+								<div class="feature-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+									<div class="feature-box-icon bg-transparent w-auto h-auto p-0 top-0 align-items-center">
+										
+										<img src="img/icons/icon-1.svg" width="44" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary'}" />
+									</div>
+									<div class="feature-box-info w-100 ps-4 ms-1">
+										<h4 class="mt-2 mb-0">Agrégation Mobile Money</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 py-3 py-lg-0">
+								<div class="feature-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+									<div class="feature-box-icon bg-transparent w-auto h-auto p-0 top-0 align-items-center">
+										
+										<img src="img/icons/icon-6.svg" width="44" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary'}" />
+									</div>
+									<div class="feature-box-info w-100 ps-4 ms-1">
+										<h4 class="mt-2 mb-0">Audit & Reprise de Code</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container pt-4 pb-4" id="intro">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 text-center">
+							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+								<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Notre expertise au service de votre transformation digitale</h2>
+							</div>
+                        </div>
+                    </div>
+					<div class="row justify-content-center">
+						<div class="col-lg-12 text-center">
+							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+								<p class="pe-lg-5 mb-4">KAYBIC AFRICA propose une approche intégrée et complète pour accompagner votre croissance digitale. Notre expertise s'articule autour de trois pôles complémentaires : le développement de solutions informatiques sur mesure, l'agrégation de paiement mobile money en Afrique de l'Ouest, et les services d'audit et de reprise de code pour optimiser vos applications existantes.</p>
+							</div>
+
+                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                                <p class="mb-0 text-dark d-flex justify-content-center">
+                                    <img width="29" height="29" src="img/icons/icon-8.svg" class="w-auto d-inline-flex p-relative bottom-2 me-2" alt="">
+                                    Découvrez nos solutions adaptées aux enjeux spécifiques du marché africain
+                                </p>
+                            </div>
+						</div>
+                    </div>
+				</div>
+
+				<!-- Portfolio - Fixed the isotope initialization and filtering -->
+				<div class="bg-grey-100 solutions-spacing-fix px-3 px-xl-0 border-radius-2 p-relative overflow-hidden">
+					<div class="container solutions-container-spacing">
+						<div class="row py-3">
+							<div class="col">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <ul class="nav nav-pills nav-pills-dark sort-source justify-content-center d-inline-flex border-lg border-2 p-1 rounded-pill" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+                                        <li class="nav-item active" data-option-value="*"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill active" href="#">Tout afficher</a></li>
+                                        <li class="nav-item" data-option-value=".developpement"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill" href="#">Développement de Solutions</a></li>
+                                        <li class="nav-item" data-option-value=".agregation"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill" href="#">Agrégation Mobile Money</a></li>
+                                        <li class="nav-item" data-option-value=".audit"><a class="nav-link text-3 px-4 py-2 font-weight-medium rounded-pill" href="#">Audit & Reprise de Code</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="sort-destination-loader sort-destination-loader-showing mt-3 pt-1">
+                                    <div class="row portfolio-list portfolio-grid sort-destination overflow-visible" data-sort-id="portfolio">
+                                        <div class="col-12 col-sm-6 col-lg-4 isotope-item developpement">
+                                            <div class="portfolio-item">
+                                                <div class="box-shadow-1 border-radius-2">
+                                                    <span class="thumb-info border-radius-2 bg-color-light thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+                                                        <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
+                                                            <a href="#" title="">
+                                                                <img src="img/projects/project-thumb-1.jpg" class="img-fluid" alt="">
+                                                            </a>
+                                                        </span>											
+                                                        
+                                                        <span class="thumb-info-content">
+                                                            <span class="thumb-info-content-inner bg-light p-4">
+                                                                <h4 class="mb-1">Développement Web</h4>
+                                                                <p class="line-height-7 mb-0">Applications sur mesure</p>
+                                                                <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                                                    <a href="#" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4 isotope-item agregation">
+                                            <div class="portfolio-item">
+                                                <div class="box-shadow-1 border-radius-2">
+                                                    <span class="thumb-info border-radius-2 bg-color-light thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+                                                        <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
+                                                            <a href="#" title="">
+                                                                <img src="img/projects/project-thumb-2.jpg" class="img-fluid" alt="">
+                                                            </a>
+                                                        </span>											
+                                                        
+                                                        <span class="thumb-info-content">
+                                                            <span class="thumb-info-content-inner bg-light p-4">
+                                                                <h4 class="mb-1">EasyTransfert</h4>
+                                                                <p class="line-height-7 mb-0">Paiement Mobile Money</p>
+                                                                <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                                                    <a href="" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4 isotope-item audit">
+                                            <div class="portfolio-item">
+                                                <div class="box-shadow-1 border-radius-2">
+                                                    <span class="thumb-info border-radius-2 bg-color-light thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+                                                        <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
+                                                            <a href="#" title="">
+                                                                <img src="img/projects/project-thumb-3.jpg" class="img-fluid" alt="">
+                                                            </a>
+                                                        </span>											
+                                                        
+                                                        <span class="thumb-info-content">
+                                                            <span class="thumb-info-content-inner bg-light p-4">
+                                                                <h4 class="mb-1">Audit de Performance</h4>
+                                                                <p class="line-height-7 mb-0">Optimisation de code</p>
+                                                                <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                                                    <a href="#" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4 isotope-item developpement">
+                                            <div class="portfolio-item">
+                                                <div class="box-shadow-1 border-radius-2">
+                                                    <span class="thumb-info border-radius-2 bg-color-light thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+                                                        <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
+                                                            <a href="#" title="">
+                                                                <img src="img/projects/project-thumb-4.jpg" class="img-fluid" alt="">
+                                                            </a>
+                                                        </span>											
+                                                        
+                                                        <span class="thumb-info-content">
+                                                            <span class="thumb-info-content-inner bg-light p-4">
+                                                                <h4 class="mb-1">Applications Mobiles</h4>
+                                                                <p class="line-height-7 mb-0">Développement mobile</p>
+                                                                <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                                                    <a href="#" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4 isotope-item agregation">
+                                            <div class="portfolio-item">
+                                                <div class="box-shadow-1 border-radius-2">
+                                                    <span class="thumb-info border-radius-2 bg-color-light thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+                                                        <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
+                                                            <a href="#" title="">
+                                                                <img src="img/projects/project-thumb-5.jpg" class="img-fluid" alt="">
+                                                            </a>
+                                                        </span>											
+                                                       
+                                                        <span class="thumb-info-content">
+                                                            <span class="thumb-info-content-inner bg-light p-4">
+                                                                <h4 class="mb-1">EasyForBusiness</h4>
+                                                                <p class="line-height-7 mb-0">API pour entreprises</p>
+                                                                <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                                                    <a href="https://easytransfert.ci/" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="https://easytransfert.ci/" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4 isotope-item audit">
+                                            <div class="portfolio-item">
+                                                <div class="box-shadow-1 border-radius-2">
+                                                    <span class="thumb-info border-radius-2 bg-color-light thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+                                                        <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
+                                                            <a href="#" title="">
+                                                                <img src="img/projects/project-thumb-6.jpg" class="img-fluid" alt="">
+                                                            </a>
+                                                        </span>											
+                                                        
+                                                        <span class="thumb-info-content">
+                                                            <span class="thumb-info-content-inner bg-light p-4">
+                                                                <h4 class="mb-1">Reprise de Code</h4>
+                                                                <p class="line-height-7 mb-0">Maintenance & évolution</p>
+                                                                <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                                                    <a href="#" class="text-uppercase font-weight-semibold text-decoration-underline">Voir détails</a>
+                                                                    <a href="#" class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span class="p-static bg-transparent transform-none"><i class="fa-solid fa-arrow-right text-dark"></i></span></a>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Detailed Solutions -->
+				<div class="container solutions-container-spacing">
+                    <div class="row py-3">
+                        <div class="col text-center">
+                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                                <h2 class="text-9 font-weight-semibold line-height-1 mb-4">Nos domaines d'expertise</h2>
+                            </div>
+                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                                <p class="lead mb-4">Découvrez en détail nos services adaptés aux besoins des entreprises africaines</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Développement de Solutions -->
+                    <div class="row align-items-center solutions-detailed-section mb-4">
+                        <div class="col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+                            <div class="bg-light p-4 p-lg-5 border-radius-2">
+                                <span class="badge bg-primary text-uppercase font-weight-bold text-px-3 py-2 mb-3">Développement de Solutions</span>
+                                <h3 class="font-weight-bold text-6 mb-3">Applications sur mesure adaptées à vos besoins</h3>
+                                <p class="text-3-5 line-height-9 mb-4">Notre équipe de développeurs expérimentés crée des applications web et mobiles adaptées aux spécificités du marché africain. Nous utilisons les technologies les plus récentes pour garantir des solutions évolutives, performantes et sécurisées.</p>
+                                <ul class="list list-icons list-icons-style-2 list-icons-lg font-weight-medium">
+                                    <li><i class="fas fa-check text-primary"></i>Applications web sur mesure</li>
+                                    <li><i class="fas fa-check text-primary"></i>Applications mobiles Android et iOS</li>
+                                    <li><i class="fas fa-check text-primary"></i>Développement d'API personnalisées</li>
+                                    <li><i class="fas fa-check text-primary"></i>Interfaces utilisateur modernes et intuitives</li>
+                                    <li><i class="fas fa-check text-primary"></i>Accompagnement à toutes les étapes du projet</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                            <img src="img/generic/generic-1.jpg" class="img-fluid border-radius-2" alt="Développement de Solutions KAYBIC">
+                        </div>
+                    </div>
+
+                    <!-- Agrégation Mobile Money -->
+                    <div class="row align-items-center solutions-detailed-section mb-4">
+                        <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+                            <div class="bg-light p-4 p-lg-5 border-radius-2">
+                                <span class="badge bg-primary text-uppercase font-weight-bold text-px-3 py-2 mb-3">Agrégation Mobile Money</span>
+                                <h3 class="font-weight-bold text-6 mb-3">La solution complète pour vos paiements mobiles en Afrique</h3>
+                                <p class="text-3-5 line-height-9 mb-4">KAYBIC facilite l'intégration des moyens de paiement mobile money pour votre entreprise. Notre API EasyTransfert vous permet d'accepter tous les moyens de paiement mobile d'Afrique de l'Ouest en toute simplicité.</p>
+                                <ul class="list list-icons list-icons-style-2 list-icons-lg font-weight-medium">
+                                    <li><i class="fas fa-check text-primary"></i>API d'encaissement et de décaissement</li>
+                                    <li><i class="fas fa-check text-primary"></i>Compatibilité avec tous les opérateurs mobile money</li>
+                                    <li><i class="fas fa-check text-primary"></i>Tableau de bord complet pour suivre vos transactions</li>
+                                    <li><i class="fas fa-check text-primary"></i>Documentation détaillée et support technique</li>
+                                    <li><i class="fas fa-check text-primary"></i>Solution sécurisée et conforme aux normes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                            <img src="img/generic/generic-2.jpg" class="img-fluid border-radius-2" alt="Agrégation Mobile Money KAYBIC">
+                        </div>
+                    </div>
+
+                    <!-- Audit & Reprise de Code -->
+                    <div class="row pb-5 align-items-center solutions-detailed-section">
+                        <div class="col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+                            <div class="bg-light p-4 p-lg-5 border-radius-2">
+                                <span class="badge bg-primary text-uppercase font-weight-bold text-px-3 py-2 mb-3">Audit & Reprise de Code</span>
+                                <h3 class="font-weight-bold text-6 mb-3">Optimisez vos applications existantes</h3>
+                                <p class="text-3-5 line-height-9 mb-4">Notre équipe d'experts analyse et améliore vos applications existantes pour en optimiser les performances, la sécurité et la maintenabilité. Nous vous accompagnons dans l'évolution de vos systèmes informatiques.</p>
+                                <ul class="list list-icons list-icons-style-2 list-icons-lg font-weight-medium">
+                                    <li><i class="fas fa-check text-primary"></i>Audit de performance et de sécurité</li>
+                                    <li><i class="fas fa-check text-primary"></i>Refactoring et optimisation de code</li>
+                                    <li><i class="fas fa-check text-primary"></i>Migration vers des technologies modernes</li>
+                                    <li><i class="fas fa-check text-primary"></i>Documentation technique complète</li>
+                                    <li><i class="fas fa-check text-primary"></i>Formation de vos équipes techniques</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                            <img src="img/generic/generic-3.jpg" class="img-fluid border-radius-2" alt="Audit & Reprise de Code KAYBIC">
+                        </div>
+                    </div>
+                </div>
+
+				
+                <!-- Explore Further -->
+                <div class="bg-secondary border-radius-2 p-relative overflow-hidden solutions-spacing-fix">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col px-0 text-center text-color-light">
+                                <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-center">
+                                    <div class="me-lg-4 flex-grow-1 flex-lg-grow-0">
+                                        <span class="d-inline-block text-3 py-4 px-5 text-uppercase font-weight-medium">Pour aller plus loin :</span>
+                                    </div>
+                                    <div class="me-3 ps-3 p-relative bottom-1 pt-3 pt-lg-0">
+                                        <a href="process-integration-support.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Découvrir notre processus d'intégration <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="py-3 py-lg-0 p-relative bottom-1 border-start border-color-light-rgba-20">
+                                        <a href="contact.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Demander une démonstration <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+			</div>
+
+			<footer id="footer" class="border-0 bg-light px-3 px-lg-5 pt-0 text-3">
+				
+				<div class="container pb-lg-4 pt-2">
+					<div class="row pt-3">
+						<div class="col-lg-4">
+							<a href="index.html">
+								<img alt="KAYBIC AFRICA" width="60" src="img/favicon.png" data-img-suffix-primary>
+							</a>
+							<p class="text-3-5 text-color-grey">Votre passerelle vers l'innovation financière en Afrique. Solutions de paiement modernes, sécurisées et accessibles pour tous.</p>
+
+							<div class="d-flex align-items-center pt-2 pb-4">
+								<p class="d-inline-block mb-0 font-weight-bold line-height-1"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-8 mark-height-30 n-ls-5 p-0">20+</mark></p>
+								<span class="custom-font-tertiary text-5 text-dark n-ls-1 fst-italic ps-2">Entreprises Partenaires</span>
+							</div>
+
+							<ul class="social-icons social-icons-clean social-icons-medium">
+								<li class="social-icons-instagram">
+									<a href="https://www.instagram.com/kaybicafrica" target="_blank" title="Instagram">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li class="social-icons-x">
+									<a href="https://www.twitter.com/kaybicafrica" target="_blank" title="X">
+										<i class="fab fa-x-twitter"></i>
+									</a>
+								</li>
+								<li class="social-icons-facebook">
+									<a href="https://www.facebook.com/kaybicafrica" target="_blank" title="Facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li class="social-icons-linkedin">
+									<a href="https://www.linkedin.com/company/kaybicafrica" target="_blank" title="LinkedIn">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 col-lg-2 pt-4 pt-lg-0">
+							<h4 class="text-color-dark font-weight-bold mb-3">Navigation</h4>
+							<ul class="list list-unstyled">
+								<li>
+									<a href="Accueil.html" class="text-color-grey text-color-hover-primary">
+										Accueil
+									</a>
+								</li>
+								<li>
+									<a href="Apropos.html" class="text-color-grey text-color-hover-primary">
+										À propos
+									</a>
+								</li>
+								<li>
+									<a href="services.html" class="text-color-grey text-color-hover-primary">
+										Produits
+									</a>
+								</li>
+								<li>
+									<a href="solutions.html" class="text-color-grey text-color-hover-primary">
+										Solutions
+									</a>
+								</li>
+								<li>
+									<a href="process-integration-support.html" class="text-color-grey text-color-hover-primary">
+										Intégration
+									</a>
+								</li>
+								<li>
+									<a href="contact.html" class="text-color-grey text-color-hover-primary">
+										Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
+							<h4 class="text-color-dark font-weight-bold mb-3">Nos Services</h4>
+							<ul class="list list-unstyled">
+								<li><a href="service-api-payin.html" class="text-color-grey text-color-hover-primary">API PayIN</a></li>
+								<li><a href="service-api-payout.html" class="text-color-grey text-color-hover-primary">API PayOUT</a></li>
+								<li><a href="service-api-transfert.html" class="text-color-grey text-color-hover-primary">Transfert International</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 pt-4 pt-lg-0">
+							<h4 class="text-color-dark font-weight-bold mb-3">Newsletter</h4>
+							<p class="text-3-5 text-color-grey">Restez informé des dernières innovations et mises à jour de KAYBIC AFRICA.</p>
+							<div class="alert alert-success d-none" id="newsletterSuccess">
+								<strong>Succès!</strong> Vous avez été ajouté à notre liste de diffusion.
+							</div>
+							<div class="alert alert-danger d-none" id="newsletterError"></div>
+							<form id="newsletterForm" action="newsletter-processor.php" method="POST" class="mb-0">
+								<div class="row">
+									<div class="form-group col">
+										<div class="position-relative">
+											<i class="icons icon-envelope text-color-grey bg-light text-3-5 position-absolute right-15 top-50pct transform3dy-n50"></i>
+											<input type="email" value="" placeholder="Votre adresse e-mail" class="form-control form-control-icon text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2" name="newsletterEmail" id="newsletterEmail">
+										</div>
+									</div>
+								</div>		
+								<div class="row">
+									<div class="form-group col">
+										<button type="submit" class="btn btn-rounded box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1" style="background-color: #d33636; color: white;" data-clone-element="1">
+											<span>S'abonner <i class="fa-solid fa-arrow-right ms-2"></i></span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+						
+				
+				<div class="footer-copyright bg-transparent pb-5">
+					<div class="container">
+						<hr>
+						<div class="row">
+							<div class="col-lg-5 text-center text-lg-start py-3">
+								<p class="text-3 mb-0 opacity-6">© 2025 KAYBIC AFRICA. Tous droits réservés.</p>
+							</div>
+							<div class="col-lg-7 py-3 text-center text-lg-end">
+								<a href="politique_confidentialité.html" class="text-color-grey text-color-hover-primary">Politique de Confidentialité</a>
+								<a href="Mentions légales.html" class="text-color-grey text-color-hover-primary ms-3">Mentions Légales</a>
+								<a href="Politique-protection-données-personnelles(DCP).html" class="text-color-grey text-color-hover-primary ms-3">DCP</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</footer>
+		</div>
+
+		<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMain" aria-labelledby="offcanvasMain">
+			<div class="offcanvas-header">
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="mb-4" id="offCanvasLogo"></div>
+				<nav class="offcanvas-nav w-100" id="offCanvasNav"></nav>
+			</div>
+		</div>
+
+		
+
+		<!-- Fixed scripts loading and initialization -->
+		<!-- Charger jQuery en premier -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+		<!-- Bootstrap Bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Ensuite charger les plugins jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Puis charger les scripts du thème -->
+		<script src="js/theme.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/theme.init.js"></script>
+
+		<!-- Enfin, les scripts personnalisés -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Fixed loading overlay timeout
+				setTimeout(function() {
+					if ($('body').hasClass('loading-overlay-showing')) {
+						$('body').removeClass('loading-overlay-showing');
+					}
+				}, 1000);
+
+				// Manually initialize isotope filtering
+				if ($.isFunction($.fn.isotope)) {
+					var $container = $('.isotope-grid');
+					$container.isotope({
+						itemSelector: '.isotope-item',
+						layoutMode: 'fitRows',
+						filter: '*'
+					});
+					
+					$('.sort-source[data-sort-id="portfolio"] a').on('click', function(e) {
+						e.preventDefault();
+						
+						var $this = $(this);
+						var filter = $this.parent().data('option-value');
+						
+						$('.sort-source[data-sort-id="portfolio"] .nav-item').removeClass('active');
+						$this.parent().addClass('active');
+						
+						$('.sort-destination[data-sort-id="portfolio"]').isotope({
+							filter: filter
+						});
+						
+						return false;
+					});
+				}
+
+				// Initialize animations with proper delays
+				if ($.isFunction($.fn.appear)) {
+					$('[data-appear-animation]').each(function() {
+						var $this = $(this);
+						
+						$this.appear(function() {
+							var delay = ($this.attr('data-appear-animation-delay') ? $this.attr('data-appear-animation-delay') : 0);
+							
+							if (delay > 1000) {
+								delay = delay / 1000;
+							}
+							
+							if (delay <= 0) {
+								delay = 0;
+							}
+							
+							setTimeout(function() {
+								$this.addClass($this.attr('data-appear-animation'));
+							}, delay);
+						}, {
+							accX: 0,
+							accY: -150
+						});
+					});
+				}
+				
+				// Carousel initialization
+				if (window.jQuery && jQuery().owlCarousel) {
+					jQuery('.carousel-half-full-width-right .owl-carousel').owlCarousel({
+						responsive: {
+							0: { items: 1 },
+							768: { items: 3 },
+							992: { items: 4 },
+							1200: { items: 5 }
+						},
+						loop: true,
+						nav: true,
+						dots: false,
+						margin: 20,
+						navText: [
+							'<span class="owl-prev"><i class="fas fa-chevron-left"></i></span>',
+							'<span class="owl-next"><i class="fas fa-chevron-right"></i></span>'
+						]
+					});
+				}
+				
+				// Offcanvas navigation
+				var $offCanvas = $('#offcanvasMain');
+				$('#offCanvasNav').html($('.header-nav').html());
+			});
+		</script>		
+	</body>
+</html>
+
+
+
