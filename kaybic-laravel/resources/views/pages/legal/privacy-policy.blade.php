@@ -102,7 +102,7 @@
                                     <strong>Responsable du traitement :</strong> KAY BIC AFRICA SARL<br>
                                     <strong>Siège social :</strong> Abidjan, Cocody, Riviera Palmeraie, lot 4142, ilot 192, 30 logements<br>
                                     <strong>RCCM :</strong> CI-ABJ-2024-B-4752<br>
-                                    <strong>Email :</strong> <a href="mailto:Christmerari@easytransfert.ci" class="text-2">Christmerari@easytransfert.ci</a><br>
+                                    <strong>Email :</strong> <a href="mailto:Contact@kaybicafrica.ci" class="text-2">Contact@kaybicafrica.ci</a><br>
                                     <strong>Téléphone :</strong> <span class="text-2">+2252530000869</span>
                                 </p>
                                 <p>

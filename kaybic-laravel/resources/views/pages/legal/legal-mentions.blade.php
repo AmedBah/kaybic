@@ -80,7 +80,7 @@
 											<p>Le site web "kaybic.com" est édité par KAY BIC AFRICA SARL, société spécialisée dans les activités de programmation informatique et les services financiers numériques en Côte d'Ivoire.</p>
 											
 											<p><strong>Directeur de la publication :</strong> Direction Générale KAY BIC AFRICA SARL</p>
-											<p><strong>Contact :</strong> <a href="mailto:Christmerari@easytransfert.ci" class="text-2">Christmerari@easytransfert.ci</a> | Téléphone : <a href="tel:+2252530000869" class="text-2">+2252530000869</a></p>
+											<p><strong>Contact :</strong> <a href="mailto:Contact@kaybicafrica.ci" class="text-2">Contact@kaybicafrica.ci</a> | Téléphone : <a href="tel:+2252530000869" class="text-2">+2252530000869</a></p>
 											<p><strong>Hébergeur du site :</strong> À déterminer selon l'infrastructure choisie</p>
 
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">2. Présentation des services</h2>
@@ -144,7 +144,7 @@
 												<li>Droit à la portabilité de vos données</li>
 											</ul>
 											
-											<p>Pour exercer ces droits, vous pouvez nous contacter à l'adresse dpo@kaybic.com ou par courrier postal à notre siège social.</p>
+											<p>Pour exercer ces droits, vous pouvez nous contacter à l'adresse Contact@kaybicafrica.ci ou par courrier postal à notre siège social.</p>
 
 											<h2 class="text-color-dark text-capitalize font-weight-bold text-5 m-0 mb-3 mt-5">5. Responsabilité et garanties</h2>
 											
@@ -178,7 +178,7 @@
 											
 											<p>Pour toute question concernant les présentes mentions légales, vous pouvez nous contacter :</p>
 											<ul>
-												<li>Par email : <a href="mailto:Christmerari@easytransfert.ci">Christmerari@easytransfert.ci</a></li>
+												<li>Par email : <a href="mailto:Contact@kaybicafrica.ci">Contact@kaybicafrica.ci</a></li>
 												<li>Par téléphone : <a href="tel:+2252530000869" class="text-2">+2252530000869</a></li>
 												<li>Par courrier : KAY BIC AFRICA SARL, Abidjan, Cocody, Riviera Palmeraie, lot 4142, ilot 192, 30 logements, Côte d'Ivoire</li>
 											</ul>

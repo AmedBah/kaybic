@@ -123,7 +123,7 @@
 											<li><i class="fas fa-check"></i><strong>Droit de retirer votre consentement :</strong> Lorsque le traitement est fondé sur votre consentement, vous pouvez le retirer à tout moment.</li>
 										</ul>
 										
-										<p>Pour exercer l'un de ces droits, veuillez nous contacter à l'adresse suivante : <a href="mailto:Christmerari@easytransfert.ci" class="text-2">Christmerari@easytransfert.ci</a> ou par courrier postal à notre siège social.</p>
+										<p>Pour exercer l'un de ces droits, veuillez nous contacter à l'adresse suivante : <a href="mailto:Contact@kaybicafrica.ci" class="text-2">Contact@kaybicafrica.ci</a> ou par courrier postal à notre siège social.</p>
 										
 										<h2 class="text-color-dark font-weight-bold mt-5 mb-3">Cookies et Technologies Similaires</h2>
 										<p>Notre site web et nos applications utilisent des cookies et des technologies similaires pour améliorer votre expérience utilisateur, analyser le trafic et personnaliser notre contenu. Pour plus d'informations sur notre utilisation des cookies, veuillez consulter notre <a href="{{ route('privacy-policy') }}">Politique relative aux cookies</a>.</p>
@@ -135,7 +135,7 @@
 										<p>Si vous avez des questions, des préoccupations ou des demandes concernant cette politique de confidentialité ou le traitement de vos données personnelles, veuillez nous contacter :</p>
 										
 										<ul class="list list-icons list-icons-style-2 mt-2 mb-5">
-											<li><i class="fas fa-envelope"></i>Par email : <a href="mailto:Christmerari@easytransfert.ci" class="text-2">Christmerari@easytransfert.ci</a></li>
+											<li><i class="fas fa-envelope"></i>Par email : <a href="mailto:Contact@kaybicafrica.ci" class="text-2">Contact@kaybicafrica.ci</a></li>
 											<li><i class="fas fa-map-marker-alt"></i>Par courrier postal : Kaybic Africa, Riviera Palmeraie, lot 4142, ilot 192, 30 logements, Abidjan, Côte d'Ivoire</li>
 											<li><i class="fas fa-phone"></i>Par téléphone : <a href="tel:+2252530000869" class="text-2">+2252530000869</a></li>
 										</ul>

@@ -39,7 +39,7 @@
 							</div>
 							<div class="feature-box-info ps-2">
 								<strong class="d-block text-uppercase text-color-secondary p-relative top-2">Envoyez un E-mail</strong>
-								<a href="mailto:Christmerari@easytransfert.ci" class="text-decoration-none font-secondary text-3 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">Christmerari@easytransfert.ci</a>
+								<a href="mailto:Contact@kaybicafrica.ci" class="text-decoration-none font-secondary text-3 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">Contact@kaybicafrica.ci</a>
 							</div>
 						</div>
 					</div>
