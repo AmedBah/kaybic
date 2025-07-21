@@ -40,7 +40,7 @@
 							</blockquote>
 							<div class="testimonial-author">
 								<div class="testimonial-author-thumbnail img-thumbnail rounded-circle">
-									<img src="{{ asset('img/team/team-1.jpg') }}" class="rounded-circle" alt="">
+									<img src="{{ asset('img/partners/user.jpg') }}" class="rounded-circle" alt="FerryTech CI">
 								</div>
 								<p><strong class="font-weight-extra-bold text-2 negative-ls-1 d-block text-dark">Marie KOUADIO</strong><span class="text-2 negative-ls-1 text-color-default">Directrice Technique - FerryTech CI</span></p>
 							</div>
@@ -57,7 +57,7 @@
 							</blockquote>
 							<div class="testimonial-author">
 								<div class="testimonial-author-thumbnail img-thumbnail rounded-circle">
-									<img src="{{ asset('img/team/team-2.jpg') }}" class="rounded-circle" alt="">
+									<img src="{{ asset('img/partners/user.jpg') }}" class="rounded-circle" alt="YamoBet">
 								</div>
 								<p><strong class="font-weight-extra-bold text-2 negative-ls-1 d-block text-dark">Amadou TRAORE</strong><span class="text-2 negative-ls-1 text-color-default">CEO - YamoBet</span></p>
 							</div>
@@ -74,7 +74,7 @@
 							</blockquote>
 							<div class="testimonial-author">
 								<div class="testimonial-author-thumbnail img-thumbnail rounded-circle">
-									<img src="{{ asset('img/team/team-3.jpg') }}" class="rounded-circle" alt="">
+									<img src="{{ asset('img/partners/user.jpg') }}" class="rounded-circle" alt="Ticket225">
 								</div>
 								<p><strong class="font-weight-extra-bold text-2 negative-ls-1 d-block text-dark">Fatou DIALLO</strong><span class="text-2 negative-ls-1 text-color-default">CFO - Ticket225</span></p>
 							</div>

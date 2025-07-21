@@ -72,11 +72,13 @@
                 </ul>
             </div>
             <div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
-                <h4 class="text-color-dark font-weight-bold mb-3">Nos Services</h4>
+                <h4 class="text-color-dark font-weight-bold mb-3">Nos Produits</h4>
                 <ul class="list list-unstyled">
                     <li><a href="{{ route('services.api-payin') }}" class="text-color-grey text-color-hover-primary">API PayIN</a></li>
                     <li><a href="{{ route('services.api-payout') }}" class="text-color-grey text-color-hover-primary">API PayOUT</a></li>
                     <li><a href="{{ route('services.api-transfert') }}" class="text-color-grey text-color-hover-primary">Transfert International</a></li>
+                    <li><a href="{{ route('services.qr-pay') }}" class="text-color-grey text-color-hover-primary">QR PAY</a></li>
+                    <li><a href="https://easytransfert.ci/" class="text-color-grey text-color-hover-primary">Easytransfert</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 pt-4 pt-lg-0">

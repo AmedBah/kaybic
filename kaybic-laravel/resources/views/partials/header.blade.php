@@ -27,11 +27,12 @@
                                     <li class="dropdown">
                                         <a href="{{ route('services') }}" class="nav-link dropdown-toggle {{ request()->routeIs('services*') ? 'active' : '' }}">Produits</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="{{ route('services') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Vue d'ensemble</a></li>
-                                            <li><a href="{{ route('services.api-payin') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API d'Encaissement</a></li>
-                                            <li><a href="{{ route('services.api-payout') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Décaissement</a></li>
-                                            <li><a href="{{ route('services.api-transfert') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Transferts International</a></li>
-                                            <li><a href="{{ route('services.qr-pay') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">QR Pay</a></li>
+                                            
+                                            <li><a href="https://easytransfert.ci/" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Easytransfert</a></li>
+                                            <li><a href="{{ route('services.api-payin') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API PayIN</a></li>
+                                            <li><a href="{{ route('services.api-payout') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API PayOUT</a></li>
+                                            <li><a href="{{ route('services.api-transfert') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Transferts Internationaux</a></li>
+                                            <li><a href="{{ route('services') }}" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Tous nos produits</a></li>
                                         </ul>
                                     </li>
                                     

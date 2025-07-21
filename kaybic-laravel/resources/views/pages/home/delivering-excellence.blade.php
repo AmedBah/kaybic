@@ -35,12 +35,54 @@
 			</div>
 			<div class="col-lg-4 mt-5">
 				<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-					<!-- Statistiques de performance avec image -->
+					<!-- Statistiques de performance avec montants exacts -->
 					<div class="text-center pt-4">
-						<h4 class="text-dark font-weight-bold mb-2">Volume de Transactions</h4>
-						<p class="text-3 text-muted mb-3">Évolution 2023-2024 (en Milliards FCFA)</p>
-					
-						<img src="{{ asset('img/svg/graph2.svg') }}" alt="Statistiques de Transactions 2023-2024" class="img-fluid w-100 border-radius-2" style="max-width: 100%; height: auto;">
+						<h4 class="text-dark font-weight-bold mb-4">Volume de Transactions</h4>
+						
+						<!-- 2024 Stats -->
+						<div class="bg-light border-radius-2 p-4 mb-3">
+							<div class="mb-3">
+								<strong class="d-block text-6 text-primary font-weight-bold">2024</strong>
+								<div class="row text-center mt-2">
+									<div class="col-6">
+										<div class="border-end border-color-grey-200">
+											<strong class="d-block text-5 text-primary">$11.7M</strong>
+											<div class="text-3 font-weight-semibold text-dark">API CASHIN</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<strong class="d-block text-5 text-primary">$13.3M</strong>
+										<div class="text-3 font-weight-semibold text-dark">API CASHOUT</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<span class="badge bg-success text-light rounded-pill">+16% vs 2023</span>
+							</div>
+						</div>
+
+						<!-- 2023 Stats -->
+						<div class="bg-light border-radius-2 p-4 mb-3">
+							<div class="mb-3">
+								<strong class="d-block text-6 text-secondary font-weight-bold">2023</strong>
+								<div class="row text-center mt-2">
+									<div class="col-6">
+										<div class="border-end border-color-grey-200">
+											<strong class="d-block text-5 text-secondary">$10M</strong>
+											<div class="text-3 font-weight-semibold text-dark">API CASHIN</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<strong class="d-block text-5 text-secondary">$11.7M</strong>
+										<div class="text-3 font-weight-semibold text-dark">API CASHOUT</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<span class="badge bg-primary text-light rounded-pill">Année de référence</span>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

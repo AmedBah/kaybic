@@ -15,7 +15,7 @@
 							<a href="{{ route('contact') }}" class="btn btn-light btn-rounded btn-xl font-weight-medium me-sm-3 mb-3 mb-sm-0">
 								Commencer maintenant
 							</a>
-							<a href="{{ route('services') }}" class="btn btn-borders btn-rounded btn-white btn-borders-light btn-xl font-weight-medium">
+							<a href="{{ route('services') }}" class="btn btn-rounded btn-white btn-borders-primary btn-xl font-weight-medium" style="border: 2px solid var(--bs-dark);">
 								Découvrir nos APIs
 							</a>
 						</div>

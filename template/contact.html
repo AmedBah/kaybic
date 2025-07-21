@@ -55,6 +55,9 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
 
+		<!-- Leaflet CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-T21B0FFW8M"></script>
 		<script>
@@ -98,11 +101,11 @@
 												<li class="dropdown">
 													<a href="services.html" class="nav-link dropdown-toggle">Produits</a>
 													<ul class="dropdown-menu">
-														<li><a href="services.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Vue d'ensemble</a></li>
-														<li><a href="service-api-payin.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API d'Encaissement</a></li>
-														<li><a href="service-api-payout.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Décaissement</a></li>
-														<li><a href="service-api-transfert.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Transferts International</a></li>
-														<li><a href="service-qr-pay.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">QR Pay</a></li>
+														<li><a href="https://easytransfert.ci/" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Easytransfert</a></li>
+														<li><a href="service-api-payin.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API PayIN</a></li>
+														<li><a href="service-api-payout.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API PayOUT</a></li>
+														<li><a href="service-api-transfert.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">API de Transferts Internationaux</a></li>
+														<li><a href="services.html" class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Tous nos produits</a></li>
 													</ul>
 												</li>
 												
@@ -275,9 +278,9 @@
                    
 				</div>
                 
-                <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+                <!-- Leaflet Map -->
 				<div class="bg-grey-100 px-3 px-xl-0 border-radius-2 p-relative overflow-hidden mt-5">
-                    <div id="googlemaps" class="google-map m-0" style="min-height: 580px;"></div>
+                    <div id="leafletmap" class="leaflet-map m-0" style="min-height: 580px;"></div>
 				</div>
 
 				<!-- Free Quote -->
@@ -287,8 +290,8 @@
 							<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
 								<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4"><span class="d-inline-flex py-1 px-2">Formulaire de Contact</span></span>
 							</div>
-							<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Demander une consultation gratuite</h2>
-							<p class="text-3-5 text-color-grey mb-4"><span class="text-color-secondary">*</span> Champs obligatoires</p>
+							<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Commencer votre intégration</h2>
+							<p class="text-3-5 text-color-grey mb-4">Démarrez votre projet avec nos experts en paiement mobile</p>
 
                             <form class="contact-form pt-3" action="#" method="POST">
 								<div class="contact-form-success alert alert-success d-none mt-4">
@@ -591,60 +594,106 @@
 
 
 
-	<!-- Google Maps -->
+	<!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<!-- Leaflet Map -->
 	<script>
-		function initMap() {
-			console.log('Initialisation de la carte...');
+		document.addEventListener('DOMContentLoaded', function() {
+			console.log('Initialisation de la carte Leaflet...');
 			
 			// Position de KAYBIC AFRICA à Abidjan, Côte d'Ivoire
-			var kaybicLocation = { lat: 5.3599517, lng: -3.9648731 };
+			var kaybicLocation = [5.3599517, -3.9648731];
 			
 			try {
 				// Créer la carte centrée sur KAYBIC AFRICA
-				var map = new google.maps.Map(document.getElementById('googlemaps'), {
-					zoom: 14,
-					center: kaybicLocation,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				});
+				var map = L.map('leafletmap').setView(kaybicLocation, 14);
 				
-				console.log('Carte créée avec succès');
+				// Ajouter les tuiles OpenStreetMap
+				L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 19,
+					attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+				}).addTo(map);
+				
+				console.log('Carte Leaflet créée avec succès');
+				
+				// Créer une icône personnalisée pour KAYBIC
+				var kaybicIcon = L.divIcon({
+					html: '<div class="custom-marker"><i class="fas fa-map-marker-alt text-primary" style="font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"></i></div>',
+					iconSize: [40, 40],
+					iconAnchor: [20, 40],
+					popupAnchor: [0, -40],
+					className: 'custom-div-icon'
+				});
 				
 				// Marqueur pour KAYBIC AFRICA
-				var kaybicMarker = new google.maps.Marker({
-					position: kaybicLocation,
-					map: map,
-					title: 'KAYBIC AFRICA - Abidjan',
-					animation: google.maps.Animation.DROP
+				var kaybicMarker = L.marker(kaybicLocation, {
+					icon: kaybicIcon,
+					title: 'KAYBIC AFRICA - Abidjan'
+				}).addTo(map);
+				
+				// Popup pour KAYBIC AFRICA
+				var popupContent = `
+					<div style="padding: 10px; min-width: 250px;">
+						<h4 style="margin: 0 0 10px 0; color: #1e40af; font-weight: bold;">KAYBIC AFRICA</h4>
+						<p style="margin: 0; line-height: 1.6;">
+							<i class="fas fa-map-marker-alt text-primary"></i> Riviera Palmeraie, Cité du Bonheur<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Abidjan, Côte d'Ivoire<br><br>
+							<i class="fas fa-phone text-primary"></i> <strong>Tél:</strong> +2252530000869<br>
+							<i class="fas fa-envelope text-primary"></i> <strong>Email:</strong> Contact@kaybicafrica.ci
+						</p>
+					</div>
+				`;
+				
+				kaybicMarker.bindPopup(popupContent, {
+					maxWidth: 300,
+					className: 'kaybic-popup'
 				});
 				
-				// Info window pour KAYBIC AFRICA
-				var kaybicInfo = new google.maps.InfoWindow({
-					content: '<div style="padding: 10px;"><h4>KAYBIC AFRICA</h4><p>Riviera Palmeraie, Cité du Bonheur<br>Abidjan, Côte d\'Ivoire<br><strong>Tél:</strong> +2252530000869<br><strong>Email:</strong> Contact@kaybicafrica.ci</p></div>'
-				});
-				
-				// Clic sur le marqueur KAYBIC
-				kaybicMarker.addListener('click', function() {
-					kaybicInfo.open(map, kaybicMarker);
-				});
+				// Ouvrir automatiquement le popup
+				kaybicMarker.openPopup();
 				
 				console.log('Marqueur KAYBIC AFRICA ajouté');
 				
+				// Ajouter un cercle autour de la position
+				L.circle(kaybicLocation, {
+					color: '#1e40af',
+					fillColor: '#3b82f6',
+					fillOpacity: 0.1,
+					radius: 500
+				}).addTo(map);
+				
+				// Style personnalisé pour le popup
+				var style = document.createElement('style');
+				style.textContent = `
+					.custom-div-icon {
+						background: transparent;
+						border: none;
+					}
+					.kaybic-popup .leaflet-popup-content-wrapper {
+						border-radius: 8px;
+						box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+					}
+					.kaybic-popup .leaflet-popup-tip {
+						border-top-color: white;
+					}
+				`;
+				document.head.appendChild(style);
+				
 			} catch (error) {
 				console.error('Erreur lors de la création de la carte:', error);
+				document.getElementById('leafletmap').innerHTML = `
+					<div style="padding: 20px; text-align: center; background: #f8f9fa; border-radius: 8px; height: 580px; display: flex; align-items: center; justify-content: center;">
+						<div>
+							<h4>Carte temporairement indisponible</h4>
+							<p>La carte ne peut pas être chargée pour le moment.</p>
+							<p><strong>Adresse:</strong> Riviera Palmeraie, Cité du Bonheur, Abidjan, Côte d'Ivoire</p>
+						</div>
+					</div>
+				`;
 			}
-		}
-		
-		// Message si Google Maps ne se charge pas
-		window.addEventListener('load', function() {
-			setTimeout(function() {
-				if (typeof google === 'undefined') {
-					console.error('Google Maps API non chargée');
-					document.getElementById('googlemaps').innerHTML = '<div style="padding: 20px; text-align: center; background: #f8f9fa; border-radius: 8px;"><h4>Carte temporairement indisponible</h4><p>La carte Google Maps ne peut pas être chargée pour le moment.</p><p><strong>Adresse:</strong> Riviera Palmeraie, Cité du Bonheur, Abidjan, Côte d\'Ivoire</p></div>';
-				}
-			}, 3000);
 		});
 	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZaHjy32TPVMxl1BgQRfulm2PKpbwCdR4&callback=initMap&loading=async" defer></script>
 
 		<!-- Current Page Vendor and Views -->
 		<script src="js/views/view.contact.js"></script>

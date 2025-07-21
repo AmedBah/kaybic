@@ -40,7 +40,7 @@
 	<div class="row mb-5">
 		<div class="col text-center">
 			<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-				<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Comment intégrer KAYBIC AFRICA à votre entreprise</h2>
+				<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Comment intégrer les API de KAYBIC AFRICA à votre entreprise</h2>
 			</div>
 			<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
 				<p class="pe-lg-5 mb-0">Chez KAYBIC AFRICA, nous croyons qu'une approche personnalisée et structurée est essentielle pour offrir une intégration de paiement mobile efficace et sécurisée. Notre processus garantit transparence, rapidité et accompagnement à chaque étape, afin de connecter votre entreprise à nos solutions Mobile Money en toute confiance :</p>
